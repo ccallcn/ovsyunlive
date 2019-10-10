@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ovlivedemo</title>
+<style> 
+body{ text-align:center} 
+.div{ margin:0 auto; width:400px; height:100px; border:1px solid #F00} 
+/* css注释：为了观察效果设置宽度 边框 高度等样式 */ 
+</style> 
+</head>
+
+<body>
+<script src="./ovflv.min.js"></script>
+<video id="videoElement" style="width: 100%;height: 100%;" controls autoplay playsinline></video>
+<script>
+	var ahost = window.location.host.split(":");
+	
+	var url=window.location.href;
+	var ip=ahost[0];
+	var stream="";
+	 
+ 
+			if (ovflv.isSupported()) {
+				var videoElement = document.getElementById('videoElement');
+				var ovflvPlayer = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://192.168.1.199:8000/live/3333.flv',
+					isLive:true,
+					cors:true,
+				  enableWorker: true,
+				  enableStashBuffer: false,
+				  autoCleanupSourceBuffer: true,
+				  stashInitialSize: 128//首帧等时长
+//hasAudio: false,
+//hasVideo: true,
+//enableStashBuffer: true,
+				},{
+				  enableWorker: true,
+				  enableStashBuffer: false,
+				  autoCleanupSourceBuffer: true,
+				  stashInitialSize: 128//首帧等时长
+				});
+				ovflvPlayer.attachMediaElement(videoElement);
+				ovflvPlayer.load();
+				ovflvPlayer.play();
+			}
+ 
+
+
+</script>
+</body>
+</html>

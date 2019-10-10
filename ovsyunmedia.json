@@ -1,0 +1,14 @@
+{
+  "name": "ovsyunmedia",
+  "version": "5.6.6",
+  "description": "OvSyun媒体服务",
+  "main": "ovsyunmedia",
+  "rtmpport": "1937",
+  "httpport": "8800",
+  "authstr": "",
+  "authpub": "",
+  "record": "./media",
+  "videoframe": 4,
+  "keyframe": 12,
+  "key": "OvSyun媒体服务(演示4)-长沙鸿辰信息科技授权@QQ:1410919373:AF96-389F-9259-TEST-0004"
+}

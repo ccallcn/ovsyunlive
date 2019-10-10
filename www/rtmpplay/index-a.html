@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ovlivedemo</title>
+<style> 
+body{ text-align:center} 
+.div{ margin:0 auto; width:400px; height:100px; border:1px solid #F00} 
+/* css注释：为了观察效果设置宽度 边框 高度等样式 */ 
+</style> 
+</head>
+
+<body>
+<script src="./ovflv.min.js"></script>
+<video id="videoElement" style="width: 100%;height: 100%;" controls autoplay playsinline></video>
+<script>
+	var ahost = window.location.host.split(":");
+	
+	var url=window.location.href;
+	var ip=ahost[0];
+	var stream="";
+	 
+	if (url.indexOf("?") != -1){ 
+			// alert(url.substring(url.lastIndexOf('?')+1,url.length));
+			stream=url.substring(url.lastIndexOf('?')+1,url.length);
+			if (ovflv.isSupported()) {
+				var videoElement = document.getElementById('videoElement');
+				var ovflvPlayer = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://'+ip+':8000/'+stream+'.flv'
+				});
+				ovflvPlayer.attachMediaElement(videoElement);
+				ovflvPlayer.load();
+				ovflvPlayer.play();
+			}
+	}else{
+			alert("没有流ＩＤ！");
+ 
+	}
+
+
+
+</script>
+</body>
+</html>

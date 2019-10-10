@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+	<title>OVPlayX</title>
+	<style type="text/css">
+		html, body {
+			background-color: #BEBEBE;
+			color: #fff;
+			text-align: center;
+			margin:0;
+			padding:0
+		}
+	</style>
+</head>
+<body>
+
+
+<h1  align="center"> OVPLAYX-QQ:1410919373</h1>
+ 
+URL:<input id="urlipt" type="text" placeholder="ovplayx://192.168.1.199:8800/live/3333" style="width:320px;" value="ovplayx://192.168.1.199:8800/live/3333"></input>
+<button type="button" onclick="player()">播放</button>
+<button type="button" onclick="iosaudio()">音频</button>
+<button type="button" onclick="stop()">关闭</button>
+<button type="button" onclick="fullopen()">打开全屏</button>
+<button type="button" onclick="fullclose()">关闭全屏</button>
+
+<div id='container1'  width="640px" height="400px">
+ <canvas id="videoCanvas" width="640px" height="400px"> 
+</div> 
+ 
+<div id="qrcode" style="position:absolute;top:0;right:0;width:100px;height:100px;z-index:100;" align="center">手机扫码播放</div>
+ 
+<script type="text/javascript" src="./OVPlayerX.js"></script>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./qrcode.min.js"></script>
+<script type="text/javascript">
+
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 100,
+	height : 100
+});
+function makeCode () {		
+	qrcode.makeCode(window.location.href);
+}
+makeCode();
+
+	var ahost = window.location.host.split(":");
+	
+	var url=window.location.href;
+//	alert(url);
+	var ip=ahost[0];
+	var stream="";
+
+  
+  var ovplay = new OVPlayerX();
+		ovplay.setView("videoCanvas");
+		ovplay.setBufferTime(500);
+		ovplay.enableAudio(false);
+  var canvas = document.getElementById('videoCanvas'); 
+  var play=false;
+
+  function player() {
+        if(!play){
+            play=true;
+            var url=document.getElementById("urlipt").value; 
+             if (url.length<1){ 
+             		alert("请输如正确的播放地址！");
+             		return;
+             }
+ 
+
+			 ovplay.play(url);
+ 
+
+            canvas.style.width = '640px';
+			// canvas.style.height = '480px';
+            canvas.addEventListener('dblclick', function() {
+              if(canvas.requestFullScreen) canvas.requestFullScreen();
+              else if(canvas.webkitRequestFullScreen) canvas.webkitRequestFullScreen();
+              else if(canvas.mozRequestFullScreen) canvas.mozRequestFullScreen();
+            })
+
+        }else{
+            alert("已经在播放啦！！");
+        }
+    }
+ if (url.indexOf("?") != -1){ 
+ 		stream=url.substring(url.lastIndexOf('?')+1,url.length);　
+		document.getElementById("urlipt").value='ovplayx://'+ip+':8800'+stream;
+		player();
+ }
+    function iosaudio() {
+        if(play){
+			ovplay.enableAudio(true);
+         }
+    }
+    function stop() {
+        if(play){
+ 
+            ovplay.stop();
+            //plaudio.destroy();
+			//ovplay.close();
+        }
+        play=false;
+        
+    }
+
+    function fullopen() {
+        if(play){
+          if(canvas.requestFullScreen) canvas.requestFullScreen();
+          else if(canvas.webkitRequestFullScreen) canvas.webkitRequestFullScreen();
+          else if(canvas.mozRequestFullScreen) canvas.mozRequestFullScreen();
+        }
+    }
+ 
+      document.addEventListener('webkitfullscreenchange', exitHandler, false);
+      document.addEventListener('mozfullscreenchange', exitHandler, false);
+      document.addEventListener('fullscreenchange', exitHandler, false);
+      document.addEventListener('MSFullscreenChange', exitHandler, false);
+ 
+      function exitHandler() {
+        if(document.fullScreenElement || document.webkitCurrentFullScreenElement || document.mozFullScreenElement) {
+          canvas.style.width = '100vw'
+        //  playerElement.style.marginBottom = '0'
+       //   playerElement.style.border = '0'
+        } else {
+           canvas.style.width = '640px'
+        //  playerElement.style.marginBottom = '20px'
+        //  playerElement.style.border = '1px solid #eee'
+        }
+      };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+		.wrapper{
+			overflow: hidden;
+			text-align: center;
+		}
+		.wrapper-content{
+			width: 31%;
+    			margin: 1%;
+    			float: left;
+    			background-color: yellow;
+		}

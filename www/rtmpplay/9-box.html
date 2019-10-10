@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>九宫格</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1,maxmum-scale=1">
+	<link rel="stylesheet" type="text/css" href="9-box.css">
+</head>
+<body>
+<script src="./ovflv.min.js"></script>
+<div class="wrapper">
+	<div class="wrapper-content"><video id="videoElement" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement1" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement2" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement3" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement4" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement5" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement6" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement7" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+	<div class="wrapper-content"><video id="videoElement8" style="width: 100%;height: 100%;" controls autoplay playsinline></video></div>
+</div>
+
+<script>
+ 
+ 
+ 
+				var videoElement = document.getElementById('videoElement');
+				var ovflvPlayer = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://127.0.0.1:8000/live/888.flv'
+				});
+				ovflvPlayer.attachMediaElement(videoElement);
+				ovflvPlayer.load();
+				ovflvPlayer.play();
+		 
+ 
+				var videoElement1 = document.getElementById('videoElement1');
+				var ovflvPlayer1 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://127.0.0.1:8000/live/888.flv'
+				});
+				ovflvPlayer1.attachMediaElement(videoElement1);
+				ovflvPlayer1.load();
+				ovflvPlayer1.play();
+
+				var videoElement2 = document.getElementById('videoElement2');
+				var ovflvPlayer2 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://127.0.0.1:8000/live/888.flv'
+				});
+				ovflvPlayer2.attachMediaElement(videoElement2);
+				ovflvPlayer2.load();
+				ovflvPlayer2.play();
+
+				var videoElement3 = document.getElementById('videoElement3');
+				var ovflvPlayer3 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://127.0.0.1:8000/live/888.flv'
+				});
+				ovflvPlayer3.attachMediaElement(videoElement3);
+				ovflvPlayer3.load();
+				ovflvPlayer3.play();
+ 
+				var videoElement4 = document.getElementById('videoElement4');
+				var ovflvPlayer4 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://localhost:8000/live/888.flv'
+				});
+				ovflvPlayer4.attachMediaElement(videoElement4);
+				ovflvPlayer4.load();
+				ovflvPlayer4.play();
+
+				var videoElement = document.getElementById('videoElement5');
+				var ovflvPlayer5 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://localhost:8000/live/888.flv'
+				});
+				ovflvPlayer5.attachMediaElement(videoElement5);
+				ovflvPlayer5.load();
+				ovflvPlayer5.play();
+
+				var videoElement6 = document.getElementById('videoElement6');
+				var ovflvPlayer6 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://localhost:8000/live/888.flv'
+				});
+				ovflvPlayer6.attachMediaElement(videoElement6);
+				ovflvPlayer6.load();
+				ovflvPlayer6.play();
+
+				var videoElement7 = document.getElementById('videoElement7');
+				var ovflvPlayer7 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://localhost:8000/live/888.flv'
+				});
+				ovflvPlayer7.attachMediaElement(videoElement7);
+				ovflvPlayer7.load();
+				ovflvPlayer7.play();
+
+				var videoElement8 = document.getElementById('videoElement8');
+				var ovflvPlayer8 = ovflv.createPlayer({
+					type: 'flv',
+					url: 'ws://localhost:8000/live/888.flv'
+				});
+				ovflvPlayer8.attachMediaElement(videoElement8);
+				ovflvPlayer8.load();
+				ovflvPlayer8.play();
+			 
+</script>
+</body>
+</html>

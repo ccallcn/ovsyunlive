@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
+body {
+	background: #BEBEBE;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	letter-spacing: .15em;
+	color: #fff;
+}
+ 
