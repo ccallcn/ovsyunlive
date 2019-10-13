@@ -44,6 +44,24 @@ H5超低延时播放: ovplayx://IP:8800/live/流id
 
 6、ovplayx播放器地址 http://127.0.0.1:10008/ovplayx/ 配置播放
 
+支持全平台（pc,android,ios）
+
+Web同屏可以高达16通道同时在线播放
+
+直播延时低于1秒
+
+支持ios自动播和手动控制全屏
+
+7、Flv播放器地址 http://127.0.0.1:10008/ovplayflv/ 配置播放
+
+支持全平台（pc,android,ios）
+
+支持http-flv和websocket-flv协议
+
+直播延时低于2秒
+
+支持ios自动播和手动控制全屏
+
 停止： 1、运行，stop.bat
 
 注意： 1、运行路径和流ID不要带中文字符
