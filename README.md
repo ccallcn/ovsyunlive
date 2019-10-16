@@ -52,7 +52,7 @@ Web同屏可以高达16通道同时在线播放
 
 支持ios自动播和手动控制全屏
 
-7、Flv播放器地址 http://127.0.0.1:10008/ovplayflv/ 配置播放
+7、Flv播放器（这个要单独授权，和系统无关） http://w.ovmeet.com:2080/ovplayerflv/ 配置播放
 
 支持全平台（pc,android,ios）
 
