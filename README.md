@@ -16,7 +16,7 @@ H5监控直播，微信直播，RTSP、RTMP转低延时h5直播，超低延时�
 
 7、支持本地，云服务器多重部署（如本地监控可以本地部署一套拉流rtsp拉转推rtmp远程云，云服务器部署一套接收）。
 
-测试，新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/4.02.zip
+测试，新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/4.03.zip
 
 对延时和流畅度要求较高，演示版不满足需要的，可以在线H5测试联系 QQ:1410919373      QQ群:216403866
 
@@ -50,7 +50,7 @@ Web同屏可以高达16通道同时在线播放
 
 支持ios自动播和手动控制全屏
 
-7、Flv播放器（这个要单独授权，和系统无关） http://w.ovmeet.com:2080/ovplayerflv/ 配置播放
+7、Flv播放器（这个要单独授权，和系统无关） http://w.ovmeet.com:2080/ovflv/ 配置播放
 
 支持全平台（pc,android,ios）
 
