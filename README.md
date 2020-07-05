@@ -1,5 +1,5 @@
 ﻿﻿# ovsyunlive
-H5监控直播，微信直播，RTSP、RTMP转低延时h5直播，超低延时，监控直播系,支持http-flv,ws-flv,pc可以不用flash
+H5监控直播，微信直播，RTSP、RTMP网页播放，超低延时，监控直播系,支持http-flv,ws-flv,pc可以不用flash
 针对H5在线抓娃娃，在线H5互动游戏，web监控,低延时解决方案
 
 1、支持rtsp,rtmp,ws流互转直播,hls转rtmp。
@@ -16,9 +16,14 @@ H5监控直播，微信直播，RTSP、RTMP转低延时h5直播，超低延时�
 
 7、支持本地，云服务器多重部署（如本地监控可以本地部署一套拉流rtsp拉转推rtmp远程云，云服务器部署一套接收）。
 
-测试，新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/4.04.zip
+8、支持Web直播推流，网页RTMP推流，webrtc推流，网页RTMP,RTSP播放
 
-对延时和流畅度要求较高，演示版不满足需要的，可以在线H5测试联系 QQ:1410919373      QQ群:216403866
+9、支持GB28181在线观看，支持视频mp4录制(商用GB版)
+
+
+测试，新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/6.06.zip
+
+对延时和流畅度要求较高，这个是演示版，商用请联系 QQ:1410919373      QQ群:216403866
 
 启动：
 
@@ -44,6 +49,8 @@ H5超低延时播放: ovplayx://IP:8800/live/流id
 
 支持全平台（pc,android,ios）
 
+多线程多通道，播放延时更低
+
 Web同屏可以高达16通道同时在线播放
 
 直播延时低于1秒
@@ -61,6 +68,8 @@ ovplayX是针对本系统做了完整优化，可多核解码，配套系统整�
 支持全平台（pc,android,ios）
 
 支持http-flv和websocket-flv协议
+
+多线程多通道，播放延时更低
 
 直播延时低于1秒
 

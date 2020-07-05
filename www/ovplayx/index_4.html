@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>OvPlayerX多屏测试 QQ:1410919373</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    .box {
+      margin: 8px 0;
+      display: flex;
+    }
+
+    .fl1 {
+      flex: 1;
+    }
+
+    .fl0 {
+      flex: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="max-width:768px;margin:0 auto">
+    <h3><a href="http://www.ovsyun.com" target="_blank">OvPlayerX多屏测试 QQ:1410919373</a></h3>
+    <table style="width:100%;">
+      <tr>
+        <td>
+          <div style=" width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video1" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+        <td>
+          <div style="width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video2" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+        <td>
+          <div style="width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video3" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+        <td>
+          <div style="width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video4" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div style="width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video5" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+        <td>
+          <div style="width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video6" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+        <td>
+          <div style="width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video7" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+        <td>
+          <div style="width:100%; padding-bottom:75%;position:relative;">
+            <canvas id="video8" style="width:100%;height:100%;position:absolute;"></canvas>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+
+
+    <div>
+      <input id="url1" style="width: 100%" value="ovplayx://192.168.1.199:8800/live/2222" /><br />
+      <input id="url2" style="width: 100%" value="ovplayx://192.168.1.199:8800/live/2222" /><br />
+      <input id="url3" style="width: 100%" value="ovplayx://192.168.1.199:8800/live/3333" /><br />
+      <input id="url4" style="width: 100%" value="ovplayx://192.168.1.199:8800/live/3333" /><br />
+
+
+      <div class="box">
+        <div class="fl1">
+          <button id="play" class="fl0">Play</button>
+          <button id="stop" class="fl0">Stop</button>
+        </div>
+
+        <div class="fl1">
+          <label>ScaleMode:</label>
+          <select onchange="scaleModeChange(event);">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+
+      </div><!-- /input-group -->
+
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="./OVPlayerX.js"></script>
+  <script>
+    /**
+   * 是否打印debug信息
+   */
+    // OVPlayerX.debug(true);
+    var player1 = new OVPlayerX();
+    var player2 = new OVPlayerX();
+    var player3 = new OVPlayerX();
+    var player4 = new OVPlayerX();
+    /**
+     * 自动测试浏览器是否支持MSE播放，如不支持，仍然使用软解码。
+     * 紧随 new 后调用
+     * 不调用则只使用软解
+     */
+    // player1.useMSE();
+
+    /**
+     * 传入 canvas视图的id，当使用mse时，自动转换为video标签
+     */
+    player1.setView("video1");
+    player2.setView("video2");
+    player3.setView("video3");
+    player4.setView("video4");
+    /**
+     * 设置最大缓冲时长，单位毫秒，只在软解时有效
+     */
+    player1.setBufferTime(1000);
+
+    player1.on("start", () => {
+      console.log("player on start");
+    });
+
+    player1.on("stop", () => {
+      console.log("player on stop");
+    });
+
+    player1.on("error", e => {
+      console.log("player on error", e);
+    });
+
+    player1.on("videoInfo", (w, h) => {
+      console.log("player on video info width=" + w + " height=" + h);
+    })
+
+    player1.on("audioInfo", (r, c) => {
+      console.log("player on audio info samplerate=" + r + " channels=" + c);
+    })
+
+    player1.on("stats", (stats) => {
+      // console.log("player on stats=", stats);
+    })
+
+    var startFunc = function () {
+      var url1 = document.getElementById("url1");
+      var url2 = document.getElementById("url2");
+      var url3 = document.getElementById("url3");
+      var url4 = document.getElementById("url4");
+      /**
+       * 开始播放,参数为 http-flv或 websocket-flv 的url
+       */
+      player1.play(url1.value);
+      player2.play(url2.value);
+      player3.play(url3.value);
+      player4.play(url4.value);
+    };
+
+    var stopFunc = function () {
+      /**
+       * 停止播放
+       */
+
+      player1.stop();
+      player2.stop();
+      player3.stop();
+      player4.stop();
+    };
+
+
+    var volumeChange = function (event) {
+      /**
+       * 设置音量
+       * 0.0  ~~ 1.0
+       * 当为0.0时,完全静音, 最大1.0
+       */
+      player1.setVolume(event.target.value / 100.0);
+    }
+
+    var scaleModeChange = function (event) {
+      /**
+       * 视频缩放模式, 当视频分辨率比例与Canvas显示区域比例不同时,缩放效果不同:
+       *  0 视频画面完全填充canvas区域,画面会被拉伸 --- 默认值
+       *  1 视频画面做等比缩放后,对齐Canvas区域,画面不被拉伸,但有黑边
+       *  2 视频画面做等比缩放后,完全填充Canvas区域,画面不被拉伸,没有黑边,但画面显示不全
+       * 软解时有效
+       */
+      player1.setScaleMode(event.target.value);
+      player2.setScaleMode(event.target.value);
+      player3.setScaleMode(event.target.value);
+      player4.setScaleMode(event.target.value);
+    };
+
+    var btPl = document.getElementById("play");
+    var btSt = document.getElementById("stop");
+
+    if (btPl.addEventListener) {
+      btPl.addEventListener("click", startFunc, false);
+    } else if (btPl.attachEvent) {
+      btPl.attachEvent("onclick", startFunc);
+    }
+
+    if (btSt.addEventListener) {
+      btSt.addEventListener("click", stopFunc, false);
+    } else if (btSt.attachEvent) {
+      btSt.attachEvent("onclick", stopFunc);
+    }
+
+  </script>
+</body>
+
+</html>
