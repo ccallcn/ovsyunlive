@@ -1,5 +1,5 @@
 ﻿﻿# ovsyunlive
-H5监控直播，微信直播，RTSP、RTMP网页播放，超低延时，监控直播系,支持http-flv,ws-flv,pc可以不用flash
+网页直播,Web推流,在线教学直播录制,H5监控直播，微信直播，RTSP、RTMP网页低延时播放，超低延时，监控直播系,支持http-flv,ws-flv,pc可以不用flash
 针对H5在线抓娃娃，在线H5互动游戏，web监控,低延时解决方案
 
 1、支持rtsp,rtmp,ws流互转直播,hls转rtmp。
