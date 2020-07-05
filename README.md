@@ -37,6 +37,10 @@ H5监控直播，微信直播，RTSP、RTMP网页播放，超低延时，监控�
 
 5、也可以直接用推流工具推流：rtmp://127.0.0.1:1937/live/流id
 
+网页Web推流打开推流：https://127.0.0.1:8802
+
+注意：需要浏览器支持Webrtc,建议Chrome浏览器
+
 rtmp播放：rtmp://127.0.0.1:1937/live/流id
 
 flv播放: http://IP:8800/live/流id.flv
