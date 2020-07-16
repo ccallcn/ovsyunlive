@@ -20,6 +20,8 @@
 
 9、支持GB28181在线观看，支持视频mp4录制(商用GB版)
 
+10、支持RTMP,RTSP推流,WebRTC直播,延时可以低至0.2秒
+
 
 测试，新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/6.06.zip
 
