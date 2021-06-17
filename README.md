@@ -1,6 +1,8 @@
 ﻿﻿# ovsyunlive
 这是一套网页直播,监控,视频会议,Web视频推流,教学直播,录像一体化系统,支持H5监控直播，微信直播会议，RTSP、RTMP网页低延时播放，超低延时，监控直播,支持http-flv,ws-flv,pc可以不用flash,全套低延时,针对H5在线抓娃娃，在线H5互动游戏，web监控,低延时解决方案
 
+视频会议演示：https://m.ovmeet.com:7777/login.html
+
 1、支持Webrtc视频会议,视频推流,rtsp,rtmp,H5低延时直播。
 
 2、支持Web直播推流，网页RTMP推流，webrtc推流，网页RTMP,RTSP播放
@@ -62,7 +64,7 @@ Web推流演示：https://IP:7777/pub/index.html
 
 支持视频录存,视频直播
 
-在线演示：https://m.ovmeet.com:7777/login.html
+视频会议演示：https://m.ovmeet.com:7777/login.html
 
 Windows平台功能稍有差异
 
