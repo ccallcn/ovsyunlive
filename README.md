@@ -39,11 +39,11 @@
 
 rtmp播放：rtmp://127.0.0.1:1937/live/流id
 
-flv播放: http://IP:8800/live/流id.flv
+flv播放: http://IP:8801/live/流id.flv
 
-ws-flv播放: ws://IP:8800/live/流id.flv
+ws-flv播放: ws://IP:8801/live/流id.flv
 
-H5超低延时播放: ovplayx://IP:8800/live/流id
+H5超低延时播放: ovplayw://IP:8802/live/流id
 
 6、视频会议功能
 
