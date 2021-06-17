@@ -104,4 +104,4 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20210616164347.jpg" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.jpg" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
