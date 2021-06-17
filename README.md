@@ -47,6 +47,9 @@ H5超低延时播放: ovplayw://IP:8802/live/流id
 
 6、视频会议功能
 
+配置ovsyunlive.conf的externIP为自已本机IP,公网服务器配公网IP
+重启程序
+
 网页Web视频会议系统,Web推流打开：https://IP:7777/login.html
 
 Web推流演示：https://IP:7777/pub/index.html
