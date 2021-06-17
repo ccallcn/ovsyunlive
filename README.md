@@ -3,6 +3,8 @@
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
 
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120438.png" /></p>
+
 1、支持Webrtc视频会议,视频推流,rtsp,rtmp,H5低延时直播。
 
 2、支持Web直播推流，网页RTMP推流，webrtc推流，网页RTMP,RTSP播放
@@ -102,7 +104,6 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 
 注意： 1、运行路径和流ID不要带中文字符
 
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120438.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
