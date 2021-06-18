@@ -8,7 +8,7 @@
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20210616164347.jpg" /></p>
 
-1、支持Webrtc视频会议,视频推流,rtsp,rtmp,H5低延时直播。
+1、支持Webrtc视频会议,Web视频推流,Web视频对讲,rtsp监控,rtmp,H5低延时直播。
 
 2、支持Web直播推流，网页RTMP推流，webrtc推流，网页RTMP,RTSP播放
 
