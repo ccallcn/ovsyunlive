@@ -1,9 +1,12 @@
 ﻿﻿# ovsyunlive
-这是一套网页直播,监控,视频会议,Web视频推流,教学直播,录像一体化系统,支持H5监控直播，微信直播会议，RTSP、RTMP网页低延时播放，超低延时，监控直播,支持http-flv,ws-flv,pc可以不用flash,全套低延时,针对H5在线抓娃娃,在线H5互动游戏,web监控,低延时解决方案,Web管理后台开源，整套方案提供绿色安装包.
+这是一套网页直播,监控,视频会议,视频对讲,Web视频推流,教学直播,录像一体化系统,支持H5监控直播，微信直播会议，RTSP、RTMP网页低延时播放，超低延时，监控直播,支持Webrtc,http-flv,ws-flv,Pc可以不用flash,全套低延时,针对H5在线抓娃娃,在线H5互动游戏,web监控,低延时解决方案,此项目后台Web管理开源，整套方案提供绿色安装包.
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
-
+注意：需要浏览器支持Webrtc,建议Chrome浏览器
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120438.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20210616164347.jpg" /></p>
 
 1、支持Webrtc视频会议,视频推流,rtsp,rtmp,H5低延时直播。
 
@@ -39,8 +42,6 @@
 
 5、也可以直接用推流工具推流：rtmp://127.0.0.1:1937/live/流id
 
-注意：需要浏览器支持Webrtc,建议Chrome浏览器
-
 rtmp播放：rtmp://127.0.0.1:1937/live/流id
 
 flv播放: http://IP:8801/live/流id.flv
@@ -68,7 +69,7 @@ Web推流演示：https://IP:7777/pub/index.html
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
 
-Windows平台功能稍有差异
+目前Windows平台功能有差异
 
 7、ovplayw播放器地址 http://127.0.0.1:8800/ovplayw/ 配置播放
 
@@ -104,10 +105,7 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 
 注意： 1、运行路径和流ID不要带中文字符
 
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20210616164347.jpg" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
