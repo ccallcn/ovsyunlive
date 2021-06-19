@@ -3,6 +3,20 @@
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
+新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.06.zip
+
+5分钟视频会议测试,支持Webrtc,rtsp,rtmp,直播用户参会
+
+1，下载上面的github上面的绿色zip包，Windows上解压
+
+2，修改ovsyunlive.conf里面的externIP 为你安装机子上的IP
+
+3，双击start.bat 启动     stop.bat 停止
+
+4，Web测试地址:https://IP:7777/login.html, 帐号随机登录就用，稍懂html也可以login.html自已调调
+
+这个是演示版，商用请联系 QQ:1410919373 QQ群:216403866
+
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120438.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
@@ -26,11 +40,8 @@
 
 9、支持RTMP,RTSP推流,WebRTC直播,延时可以低至0.2秒
 
-测试，新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.06.zip
 
-这个是演示版，商用请联系 QQ:1410919373 QQ群:216403866
-
-启动：
+直播管理：
 
 1、双击运行，start.bat
 
@@ -51,15 +62,6 @@ ws-flv播放: ws://IP:8801/live/流id.flv
 H5超低延时播放: ovplayw://IP:8802/live/流id
 
 6、视频会议功能
-
-配置ovsyunlive.conf的externIP为自已本机IP,公网服务器配公网IP
-重启程序
-
-网页Web视频会议系统,Web推流打开：https://IP:7777/login.html
-
-Web推流演示：https://IP:7777/pub/index.html
-
-直接可以登录,用户随机
 
 支持Webrtc,rtsp,rtmp,直播用户参会
 
