@@ -15,6 +15,26 @@
 
 4，Web测试地址:https://IP:7777/login.html, 帐号随机登录就用，稍懂html也可以login.html自已调调
 
+直播管理：
+
+1、双击运行，start.bat
+
+2、网页打开http://127.0.0.1:8800/ 用户：admin 密码：123456
+
+3、推流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id  
+
+4、播放列表，查看流列表在线状态和在线直接播放
+
+5、也可以直接用推流工具推流：rtmp://127.0.0.1:1937/live/流id
+
+rtmp播放：rtmp://127.0.0.1:1937/live/流id
+
+flv播放: http://IP:8801/live/流id.flv
+
+ws-flv播放: ws://IP:8801/live/流id.flv
+
+H5超低延时播放: ovplayw://IP:8802/live/流id
+
 这个是演示版，商用请联系 QQ:1410919373 QQ群:216403866
 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120438.png" /></p>
@@ -40,28 +60,7 @@
 
 9、支持RTMP,RTSP推流,WebRTC直播,延时可以低至0.2秒
 
-
-直播管理：
-
-1、双击运行，start.bat
-
-2、网页打开http://127.0.0.1:8800/ 用户：admin 密码：123456
-
-3、推流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id  
-
-4、播放列表，查看流列表在线状态和在线直接播放
-
-5、也可以直接用推流工具推流：rtmp://127.0.0.1:1937/live/流id
-
-rtmp播放：rtmp://127.0.0.1:1937/live/流id
-
-flv播放: http://IP:8801/live/流id.flv
-
-ws-flv播放: ws://IP:8801/live/流id.flv
-
-H5超低延时播放: ovplayw://IP:8802/live/流id
-
-6、视频会议功能
+10、视频会议功能
 
 支持Webrtc,rtsp,rtmp,直播用户参会
 
@@ -73,7 +72,7 @@ H5超低延时播放: ovplayw://IP:8802/live/流id
 
 目前Windows平台功能有差异
 
-7、ovplayw播放器地址 http://127.0.0.1:8800/ovplayw/ 配置播放
+11、ovplayw播放器地址 http://127.0.0.1:8800/ovplayw/ 配置播放
 
 支持全平台（pc,android,ios）
 
@@ -91,7 +90,7 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 
 如需要低延时Flv播放器咨询QQ:1410919373 和本系统无关，需要单独授权。
 
-8、Flv播放器（这个要单独授权，和系统无关） http://w.ovmeet.com:2080/ovflv/ 配置播放
+12、Flv播放器（这个要单独授权，和系统无关） http://w.ovmeet.com:2080/ovflv/ 配置播放
 
 支持全平台（pc,android,ios）
 
