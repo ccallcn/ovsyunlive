@@ -1,6 +1,0 @@
-{"name":"ssss","custompath":"rtmp://127.0.0.1:1937/56222222/ssss","loop":1,"auto":1,"tasks":[{"explain":"ssss","transtype":"RTMP","src":"rtmp://58.200.131.2:1935/livetv/fhzx"}],"id":"CTWUWGS7","index":0,"ctime":"2021-06-15 14:44:21","mtime":"2021-06-15 14:44:21","_id":"KWRfKcv0CWvjuerB"}
-{"name":"rtspp","custompath":"rtmp://127.0.0.1:1937/56222222/rtspp","loop":1,"auto":1,"tasks":[{"explain":"rtspp","transtype":"RTMP","src":"rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"}],"id":"FKK0EQPY","index":0,"ctime":"2021-06-15 15:03:59","mtime":"2021-06-15 15:03:59","_id":"ZxDycMlPoTZsYisd"}
-{"name":"ssss","custompath":"rtmp://127.0.0.1:1937/56222222/ssss","loop":1,"auto":1,"tasks":[{"explain":"ssss","transtype":"RTMP","src":"rtmp://58.200.131.2:1935/livetv/fhzx"}],"id":"CTWUWGS7","index":0,"ctime":"2021-06-15 14:44:21","mtime":"2021-06-16 13:07:46","_id":"KWRfKcv0CWvjuerB"}
-{"name":"rtspp","custompath":"rtmp://127.0.0.1:1937/56222222/rtspp","loop":1,"auto":1,"tasks":[{"explain":"rtspp","transtype":"RTMP","src":"rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"}],"id":"FKK0EQPY","index":0,"ctime":"2021-06-15 15:03:59","mtime":"2021-06-16 13:07:47","_id":"ZxDycMlPoTZsYisd"}
-{"$$deleted":true,"_id":"ZxDycMlPoTZsYisd"}
-{"$$deleted":true,"_id":"KWRfKcv0CWvjuerB"}
