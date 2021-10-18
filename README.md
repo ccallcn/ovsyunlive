@@ -3,19 +3,9 @@
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
-新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.06.zip
+新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.08.zip
 
-5分钟视频会议测试,支持Webrtc,rtsp,rtmp,直播用户参会
-
-1，下载上面的github上面的绿色zip包，Windows上解压
-
-2，修改ovsyunlive.conf里面的externIP 为你安装机子上的IP
-
-3，双击start.bat 启动     stop.bat 停止
-
-4，Web测试地址:https://IP:7777/login.html, 帐号随机登录就用，稍懂html也可以login.html自已调调
-
-直播管理：
+H5，web，RTSP低延时直播测试：
 
 1、双击运行，start.bat
 
@@ -37,10 +27,10 @@ H5超低延时播放: ovplayw://IP:8802/live/流id
 
 这个是演示版，商用请联系 QQ:1410919373 QQ群:216403866
 
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120438.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20210616164347.jpg" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
 
 1、支持Webrtc视频会议,Web视频推流,Web视频对讲,rtsp监控,rtmp,H5低延时直播。
 
@@ -69,8 +59,6 @@ H5超低延时播放: ovplayw://IP:8802/live/流id
 支持视频录存,视频直播
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
-
-目前Windows平台功能有差异
 
 11、ovplayw播放器地址 http://127.0.0.1:8800/ovplayw/ 配置播放
 
@@ -106,7 +94,19 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 
 注意： 1、运行路径和流ID不要带中文字符
 
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
+
+5分钟Web推流，桌面共享，会议测试,支持Webrtc,rtsp,rtmp参会
+
+1，下载上面的github上面的绿色zip包，Windows上解压
+
+2，修改ovsyunmedia.ini里面的exthost为你安装机子上的IP
+
+3，双击start.bat 启动     stop.bat 停止
+
+4，Web测试地址:https://IP:7777/login.html, 帐号随机登录就用，稍懂html也可以login.html自已调调
+
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
+
+
+
