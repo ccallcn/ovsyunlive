@@ -25,7 +25,7 @@ ws-flv播放: ws://IP:8801/live/流id.flv
 
 H5超低延时播放: ovplayw://IP:8802/live/流id
 
-这个是演示版，商用请联系 QQ:1410919373 QQ群:216403866
+这个是演示版，商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
