@@ -27,9 +27,9 @@ H5超低延时播放: ovplayw://IP:8802/live/流id
 
 这个是演示版，商用请联系 QQ:1410919373 QQ群:216403866
 
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
 
 1、支持Webrtc视频会议,Web视频推流,Web视频对讲,rtsp监控,rtmp,H5低延时直播。
