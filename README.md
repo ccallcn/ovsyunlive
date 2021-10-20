@@ -5,7 +5,7 @@
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
 新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.08.zip
 
-H5，web，RTSP低延时直播测试：
+H5，Webrtc推流，Webrtc直播，Webrtc播放 ，RTSP低延时直播测试：
 
 1、下载上面的github上面的绿色zip包，Windows上解压
 
@@ -20,6 +20,8 @@ H5，web，RTSP低延时直播测试：
 6、播放列表，查看流列表在线状态和在线直接播放
 
 7、也可以直接用推流工具推流：rtmp://127.0.0.1:1937/live/流id
+
+8、Webrtc会议，Webrtc推流 测试地址:https://IP:7777/login.html
 
 rtmp播放：rtmp://127.0.0.1:1937/live/流id
 
