@@ -84,7 +84,7 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 
 如需要低延时Flv播放器咨询QQ:1410919373 和本系统无关，需要单独授权。
 
-12、Flv播放器（这个要单独授权，和系统无关） http://w.ovmeet.com:2080/ovflv/ 配置播放
+12、Flv播放器（这个要单独授权，和系统无关） http://m.ovmeet.com:8082/ovflv/ 配置播放
 
 支持全平台（pc,android,ios）
 
@@ -100,6 +100,8 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 
 注意： 1、运行路径和流ID不要带中文字符
 
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
 
 5分钟Web推流，桌面共享，会议测试,支持Webrtc,rtsp,rtmp参会
 
@@ -110,9 +112,6 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 3，双击start.bat 启动     stop.bat 停止
 
 4，Web测试地址:https://IP:7777/login.html, 帐号随机登录就用，稍懂html也可以login.html自已调调
-
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
 
 
 
