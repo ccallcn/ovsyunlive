@@ -1,5 +1,5 @@
 ﻿﻿# ovsyunlive
-这是一套网页直播,监控,视频会议,视频对讲,Web视频推流,教学直播,录像一体化系统,非常适合H5超低延时的桌面直播，游戏直播，桌面远程控制，游戏远控，支持H5监控直播，微信直播会议，RTSP、RTMP网页低延时播放，支持Webrtc,http-flv,ws-flv,Pc可以不用flash,全套低延时,针对硬件游戏机远控推流做了低延时的转码和转发,能在线H5互动游戏,web监控,低延时解决方案,此项目后台Web管理开源，整套方案提供绿色安装包.
+这是一套网页直播,监控,视频会议,视频对讲,Web视频推流,教学直播,录像一体化系统,非常适合H5超低延时的桌面直播，电子游戏直播，桌面远程控制，游戏远控，支持H5监控直播，微信直播会议，RTSP、RTMP网页低延时播放，支持Webrtc,http-flv,ws-flv,Pc可以不用flash,全套低延时,针对硬件游戏机远控推流做了低延时的转码和转发,能在线H5互动游戏,web监控,低延时解决方案,此项目后台Web管理开源，整套方案提供绿色安装包.
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
@@ -33,9 +33,9 @@ H5超低延时播放: ovplayw://IP:8802/live/流id
 
 这个是演示版，商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
 
 1、支持Webrtc视频会议,Web视频推流,Web视频对讲,rtsp监控,rtmp,H5低延时直播。
