@@ -9,27 +9,42 @@ H5，Webrtc推流，Webrtc直播，Webrtc播放 ，RTSP低延时直播测试：
 
 1、下载上面的github上面的绿色zip包，Windows上解压
 
-2、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP
+2、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（如公网要用公网IP）
 
 3、双击运行，start.bat    商用支持Windows,Linux系统
 
 4、网页打开http://127.0.0.1:8800/ 用户：admin 密码：123456
 
-5、推流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id  
+5、推流测试：
+
+推流地址:
+rtmp://IP:1937/live/test001
+
+rtmp播流地址：
+rtmp://IP:1937/live/test001
+
+h5在线播流播放器测试：
+http://IP:8800/ovplayw/?IP:8802/live/test001
+
+H5播流：
+http网站播流地址
+ovplayw://IP:8802/live/test001
+
+https网站播流地址
+ovplaywss://IP:8807/live/test001
+
+flv播放地址: http://IP:8801/live/流id.flv
+
+ws-flv播放地址: ws://IP:8801/live/流id.flv
+
+5、拉流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id  
 
 6、播放列表，查看流列表在线状态和在线直接播放
 
 7、也可以直接用推流工具推流：rtmp://127.0.0.1:1937/live/流id
 
 8、Webrtc会议，Webrtc推流 测试地址:https://IP:7777/login.html
-
-rtmp播放：rtmp://127.0.0.1:1937/live/流id
-
-flv播放: http://IP:8801/live/流id.flv
-
-ws-flv播放: ws://IP:8801/live/流id.flv
-
-H5超低延时播放: ovplayw://IP:8802/live/流id
+ 
 
 这个是演示版，商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
