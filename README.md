@@ -17,31 +17,23 @@ H5，Webrtc推流，Webrtc直播，Webrtc播放 ，RTSP低延时直播测试：
 
 5、推流测试：
 
-推流地址:
-rtmp://IP:1937/live/test001
+推流地址：rtmp://IP:1937/live/test001
 
-rtmp播流地址：
-rtmp://IP:1937/live/test001
+rtmp播流地址：rtmp://IP:1937/live/test001
 
-h5在线播流播放器测试：
-http://IP:8800/ovplayw/?IP:8802/live/test001
+h5在线播流播放器测试：http://IP:8800/ovplayw/?IP:8802/live/test001
 
-H5播流：
-http网站播流地址
-ovplayw://IP:8802/live/test001
+http网站播流地址：ovplayw://IP:8802/live/test001
 
-https网站播流地址
-ovplaywss://IP:8807/live/test001
+https网站播流地址：ovplaywss://IP:8807/live/test001
 
 flv播放地址: http://IP:8801/live/流id.flv
 
 ws-flv播放地址: ws://IP:8801/live/流id.flv
 
-5、拉流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id  
+6、拉流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id(随机生成，或自已填写) 
 
-6、播放列表，查看流列表在线状态和在线直接播放
-
-7、也可以直接用推流工具推流：rtmp://127.0.0.1:1937/live/流id
+7、播放列表，查看流列表在线状态和在线直接播放
 
 8、Webrtc会议，Webrtc推流 测试地址:https://IP:7777/login.html
  
