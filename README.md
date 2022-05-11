@@ -9,7 +9,7 @@ H5，Webrtc推流，Webrtc直播，Webrtc播放 ，RTSP低延时直播测试：
 
 1、下载上面的github上面的绿色zip包，Windows上解压
 
-2、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（如公网要用公网IP）
+2、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
 
 3、双击运行，start.bat    商用支持Windows,Linux系统
 
@@ -18,6 +18,8 @@ H5，Webrtc推流，Webrtc直播，Webrtc播放 ，RTSP低延时直播测试：
 5、推流测试：
 
 推流地址：rtmp://IP:1937/live/test001
+
+Web推流地址：ovplayw://IP:7777/live/test001
 
 rtmp播流地址：rtmp://IP:1937/live/test001
 
@@ -35,12 +37,14 @@ ws-flv播放地址: ws://IP:8801/live/流id.flv
 
 7、播放列表，查看流列表在线状态和在线直接播放
 
-8、Webrtc会议，Webrtc推流 测试地址:https://IP:7777/login.html
- 
+8、Webrtc在线推流，测试地址：https://IP:7777/pub/index.html
 
+9、Webrtc在线会议，测试地址：https://IP:7777/login.html
+ 
 这个是演示版，商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20210616164347.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
