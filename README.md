@@ -11,6 +11,8 @@ H5，Webrtc推流，Webrtc直播，Webrtc播放 ，RTSP低延时直播测试：
 
 2、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
 
+   修改ovsyunlive.conf里面的candidate IP;为你安装机子上的IP（内网用内网IP,公网要用公网IP）
+
 3、双击运行，start.bat    商用支持Windows,Linux系统
 
 4、网页打开http://127.0.0.1:8800/ 用户：admin 密码：123456
