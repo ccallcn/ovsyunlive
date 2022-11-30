@@ -3,7 +3,7 @@
 
 视频会议演示：https://m.ovmeet.com:7777/login.html
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
-新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.09.zip
+新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
 
 H5，Webrtc推流，Webrtc直播，Webrtc播放 ，RTSP低延时直播测试：
 
