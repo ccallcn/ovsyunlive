@@ -1,7 +1,7 @@
 ﻿﻿# ovsyunlive
 这是一套网页直播,监控,视频会议,视频对讲,Web视频推流,教学直播,录像一体化系统,非常适合H5超低延时的桌面直播，电子游戏直播，桌面远程控制，游戏远控，支持H5监控直播，微信直播会议，RTSP、RTMP网页低延时播放，支持Webrtc,http-flv,ws-flv,Pc可以不用flash,全套低延时,针对硬件游戏机远控推流做了低延时的转码和转发,能在线H5互动游戏,web监控,低延时解决方案,此项目后台Web管理开源，整套方案提供绿色安装包.
 
-视频会议演示：https://v.ovmeet.com:7777/login.html
+视频会议演示：https://m.ovmeet.com:7777/login.html
 
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
 新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
