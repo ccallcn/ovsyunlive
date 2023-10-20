@@ -50,6 +50,9 @@ ws-flv播放地址: ws://IP:8801/live/流id.flv
  
 这个是演示版，商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
+
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.jpg" /></p>
@@ -118,8 +121,6 @@ ovplayw是针对本系统做了完整优化，可多核解码，配套系统整�
 
 注意： 1、运行路径和流ID不要带中文字符
 
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
 
 5分钟Web推流，桌面共享，会议测试,支持Webrtc,rtsp,rtmp参会
 
