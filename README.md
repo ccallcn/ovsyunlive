@@ -11,8 +11,9 @@
 
 3、双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统
 
-Web在线rtmp/rtsp推流测试：https://IP:7702/pub/index.html
+Web在线rtmp/rtsp推流测试：
 
+https://IP:7702/pub/index.html
 
 Web播放rtmp/rtsp/webrtc/ovplayw：
 
