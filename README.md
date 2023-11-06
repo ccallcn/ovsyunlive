@@ -52,10 +52,9 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
  播放列表，查看流列表在线状态和在线直接播放
 
 这个是演示版，商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
-
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.png" /></p>
 视频会议功能演示：
 
 MCU会议演示：https://w.ovmeet.com:9301/login.html
