@@ -7,6 +7,10 @@
 
 国内下载： http://m.ovmeet.com/ovsyunlive.zip
 
+在线推流演示：https://m.ovmeet.com:7702/pub/index.html
+
+web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
+
 2、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
 
 3、双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统
@@ -47,21 +51,11 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
 
  播放列表，查看流列表在线状态和在线直接播放
 
- 
 这个是演示版，商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
-
 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120437.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
-
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
-
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
-
-
 视频会议功能演示：
 
 MCU会议演示：https://w.ovmeet.com:9301/login.html
@@ -89,6 +83,13 @@ SFU会议演示：https://v.ovmeet.com:7777/login.html
 4、运行路径和流ID不要带中文字符
 
 5，Web测试地址:https://IP:7777/login.html, 帐号随机登录就用，稍懂html也可以login.html自已调调
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190424172015.png" /></p>
+
+
+
 
 
 
