@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+	<title>OVPlayerW</title>
+	<style type="text/css">
+		html, body {
+			background-color: #BEBEBE;
+			color: #fff;
+			text-align: center;
+			margin:0;
+			padding:0
+		}
+	</style>
+</head>
+<body>
+
+
+<h1  align="center"> </h1>
+URL:<input id="urlipt" type="text" placeholder="rtsp://admin:111111@192.168.1.105/live0.264" style="width:320px;" value="rtsp://admin:111111@192.168.1.105/live0.264"></input>
+<button type="button" onclick="player()">播放</button>
+
+
+<button type="button" onclick="iosaudio()">音频</button>
+<button type="button" onclick="iosplay()">Chrome或IOS触发播放</button>
+<button type="button" onclick="stop()">关闭</button>
+<button type="button" onclick="fullopen()">打开全屏</button>
+<button type="button" onclick="fullclose()">关闭全屏</button>
+
+<div id='container1'  width="640px" height="400px">　
+   <video id="video" muted playsinline controls></video>
+</div> 
+ 
+<div id="qrcode" style="position:absolute;top:0;right:0;width:100px;height:100px;z-index:100;" align="center">手机扫码播放</div>
+ 
+<script src="ovplayer.min.js" ></script>
+<script src="jquery.min.js"></script>
+<script src="qrcode.min.js"></script> 
+ 
+<!-- <script type="text/javascript" src="vconsole.min.js"></script> -->
+<script type="text/javascript">
+//　var vConsole = new VConsole();
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 100,
+	height : 100
+});
+function makeCode () {		
+	qrcode.makeCode(window.location.href);
+}
+makeCode();
+
+	var ahost = window.location.host.split(":");
+	
+	var url=window.location.href;
+//	alert(url);
+	var ip=ahost[0];
+	var stream="";
+  var play;
+  var port=":7701";
+  if(window.location.protocol=='https:'){
+    port=":7702";
+  }
+  this.ovplayer = new OvPlayer("video", window.location.protocol+"//"+window.location.hostname+port);
+  var video = document.getElementById('video');
+ 
+  function player() {
+        if(!play){
+            play=true;
+            var url=document.getElementById("urlipt").value; 
+             if (url.length<1){ 
+             		alert("请输如正确的播放地址！");
+             		return;
+             }
+
+             // ovplayer.connect(url,true,"1937");
+               ovplayer.connect(url); 
+               //  video.muted=false;
+             //  console.log(JSON.stringify(ovplayer.appstream));
+              // console.log(ovplayer.appstream.url);
+        }else{
+            alert("已经在播放啦！！");
+        }
+  }
+   if (url.indexOf("?") != -1){ 
+   		stream=url.substring(url.lastIndexOf('?')+1,url.length);　
+  		document.getElementById("urlipt").value='ovplayw://'+stream;
+  		player();
+   }
+  // player();
+    function iosaudio() {
+
+
+        if(play){
+         　var myVid=document.getElementById("video");
+
+          myVid.muted=!myVid.muted;
+        }
+    }
+    function iosplay() {
+          var myVid=document.getElementById("video");
+          myVid.play();
+          myVid.muted=false;
+         // myVid.muted=myVid.play();
+    }
+    function stop() {
+        if(play && this.ovplayer){ 
+         // alert("test");
+            this.ovplayer.disconnect() 
+        }
+        play=false;
+        
+    }
+
+    function fullopen() {
+        if(play){
+            //var ele = document.documentElement;
+            var ele = document.getElementById('videoElement');
+            if (ele .requestFullscreen) {
+                ele .requestFullscreen();
+            } else if (ele .mozRequestFullScreen) {
+                ele .mozRequestFullScreen();
+            } else if (ele .webkitRequestFullScreen) {
+                ele .webkitRequestFullScreen();
+            }
+
+ 
+        }
+    }
+ 
+ 
+//退出全屏
+function fullclose() {
+  //  var de = document;
+	var de = document.getElementById('videoElement');
+    if (de.exitFullscreen) {
+        de.exitFullscreen();
+    } else if (de.mozCancelFullScreen) {
+        de.mozCancelFullScreen();
+    } else if (de.webkitCancelFullScreen) {
+        de.webkitCancelFullScreen();
+    }
+}
+
+</script>
+</body>
+</html>

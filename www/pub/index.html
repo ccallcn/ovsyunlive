@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+#video {
+    height: 100%;
+    background: black;
+    flex-grow: 1;
+    min-height: 0;
+}
+#controls {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 10px;
+}
+#device {
+    flex-direction: column;
+}
+#device > div {
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#device > div > div {
+    display: flex;
+    gap: 20px;
+}
+#error-message {
+    text-align: center;
+}
+select {
+    width: 200px;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./qrcode.min.js"></script>
+<script type="text/javascript" src="./ovplaypub.min.js"></script>
+<video id="video" muted controls autoplay playsinline></video>
+<div id="controls">
+    <div id="initializing" style="display: block;">
+        initializing
+    </div>
+    <div id="device" style="display: none;">
+        <div id="device_line">
+            <div>
+                视频设备
+                <select id="video_device">
+                    <option value="none">none</option>
+                </select>
+            </div>
+
+            <div>
+                音频设备
+                <select id="audio_device">
+                    <option value="none">none</option>
+                </select>
+            </div>
+        </div>
+        <div id="codec_line">
+            <div>
+                视频编码
+                <select id="video_codec">
+                </select>
+            </div>
+
+            <div>
+                音频编码
+                <select id="audio_codec">
+                </select>
+            </div>
+        </div>
+        <div id="codec_quality">
+            <div>
+                视频质量
+                <select id="video_quality">
+                </select>
+            </div>
+
+            <div>
+                视频帧率
+                <select id="video_fps">
+                </select>
+            </div>
+        </div>
+        <div id="bitrate_line">
+            <div>
+                视频码流 (kbps)
+                <input id="video_bitrate" type="text" value="10000" />
+            </div>
+
+            <div>
+                音频码流 (kbps)
+                <input id="audio_bitrate" type="text" value="32" />
+            </div>
+
+            <div>
+                <input id="audio_voice" type="checkbox" checked>
+                <label for="audio_voice">语音优化</label>
+            </div>
+        </div>
+
+        <div id="submit_line">
+URL:<input id="urlipt" type="text" placeholder="rtmp://m.ovmeet.com:1937/live/test001" style="width:320px;" value="rtmp://m.ovmeet.com:1937/live/test001"></input>
+            <button id="publish_confirm">推流</button>
+        </div>
+    </div>
+    <div id="transmitting" style="display: none;">
+        推流中
+    </div>
+    <div id="error" style="display: none;">
+        <span id="error-message"></span>
+    </div>
+</div>
+
+<script>
+
+const INITIALIZING = 0;
+const DEVICE = 1;
+const TRANSMITTING = 2;
+const ERROR = 3;
+
+let state = INITIALIZING;
+let errorMessage = '';
+
+const render = () => {
+    for (const el of ['initializing', 'device', 'transmitting', 'error']) {
+        document.getElementById(el).style.display = 'none';
+    }
+
+    switch (state) {
+    case DEVICE:
+        document.getElementById('device').style.display = 'flex';
+        break;
+
+    case TRANSMITTING:
+        document.getElementById('transmitting').style.display = 'flex';
+        break;
+
+    case ERROR:
+        document.getElementById('error').style.display = 'flex';
+        document.getElementById('error-message').innerHTML = '错误: ' + errorMessage;
+        break;
+    }
+};
+
+const restartPause = 2000;
+
+
+
+class Transmitter {
+    constructor(stream) {
+        this.stream = stream;
+        this.pc = null;
+        this.restartTimeout = null;
+        this.sessionUrl = '';
+        this.queuedCandidates = [];
+       // this.start();
+    }
+    scheduleRestart() {
+        if (this.restartTimeout !== null) {
+            return;
+        }
+
+        if (this.pc !== null) {
+            this.pc.close();
+            this.pc = null;
+        }
+
+        this.restartTimeout = window.setTimeout(() => {
+            this.restartTimeout = null;
+            this.start();
+        }, restartPause);
+
+        if (this.sessionUrl) {
+            fetch(this.sessionUrl, {
+                method: 'DELETE',
+            })
+                .then((res) => {
+                    if (res.status !== 200) {
+                        throw new Error('bad status code');
+                    }
+                })
+                .catch((err) => {
+                    console.log('delete session error: ' + err);
+                });
+        }
+        this.sessionUrl = '';
+
+        this.queuedCandidates = [];
+    }
+}
+
+const onTransmit = (stream) => {
+    
+   // new Transmitter(stream);
+
+                //weburl="https://192.168.1.199:7002"
+            var ovpublish = new OvPublishW(window.location.protocol+"//"+window.location.hostname+":7702"); 
+            //var ovpublish = new OvPublishW(); 
+            document.getElementById('video').srcObject = ovpublish.stream;
+            var url = $("#urlipt").val();
+
+            var option={};
+                option.videoCodec=document.getElementById('video_codec').value;
+                option.audioCodec=document.getElementById('audio_codec').value;
+                option.videoBitrate=document.getElementById('video_bitrate').value;
+                option.audioBitrate=document.getElementById('audio_bitrate').value;
+                option.audioVoice=document.getElementById('audio_voice').value;
+
+            //ovpublish.publish(url,stream,option).then(function(session){
+            ovpublish.publish(url,stream).then(function(session){    
+                console.log("publish ok ");
+               // play=true;
+            }).catch(function (reason) {
+                ovpublish.close();
+                $('#video').hide();
+                console.error(reason);
+            });
+
+};
+
+const onPublish = () => {
+    state = TRANSMITTING;
+    render();
+
+    const videoId = document.getElementById('video_device').value;
+    const audioId = document.getElementById('audio_device').value;
+    const videoQu = document.getElementById('video_quality').value;
+    const videoFps = document.getElementById('video_fps').value;
+    let w=1280;
+    let h=720;
+    let f=15;
+    if(videoQu=='1920*1080'){
+        w=1920;
+        h=1080;
+
+    }else if(videoQu=='1280*720'){
+        w=1280;
+        h=720;
+    }else if(videoQu=='640*480'){
+        w=640;
+        h=480;
+    }
+
+    if (videoId !== 'screen') {
+        let video = false;
+        if (videoId !== 'none') {
+           if (videoQu !== 'none') {
+                video = {
+                    deviceId: videoId,
+                    width: { ideal: w},
+                    height: { ideal: h},
+                    frameRate: { ideal: videoFps}
+                };
+            }else{
+                video = {
+                    deviceId: videoId,
+                };   
+            }
+
+        }
+       // console.log("video->",video);
+        let audio = false;
+
+        if (audioId !== 'none') {
+            audio = {
+                deviceId: audioId,
+            };
+
+            const voice = document.getElementById('audio_voice').checked;
+            if (!voice) {
+                audio.autoGainControl = false;
+                audio.echoCancellation = false;
+                audio.noiseSuppression = false;
+            }
+        }
+
+        navigator.mediaDevices.getUserMedia({ video, audio })
+            .then(onTransmit)
+            .catch((err) => {
+                state = ERROR;
+                errorMessage = err.toString();
+                render();
+            });
+    } else {
+        navigator.mediaDevices.getDisplayMedia({
+            video: {
+                width: { ideal: 1920 },
+                height: { ideal: 1080 },
+                frameRate: { ideal: 30 },
+                cursor: "always",
+            },
+            audio: true,
+        })
+            .then(onTransmit)
+            .catch((err) => {
+                state = ERROR;
+                errorMessage = err.toString();
+                render();
+            });
+    }
+};
+
+const populateDevices = () => {
+    return navigator.mediaDevices.enumerateDevices()
+        .then((devices) => {
+            for (const device of devices) {
+                switch (device.kind) {
+                case 'videoinput':
+                    {
+                        const opt = document.createElement('option');
+                        opt.value = device.deviceId;
+                        opt.text = device.label;
+                        document.getElementById('video_device').appendChild(opt);
+                    }
+                    break;
+
+                case 'audioinput':
+                    {
+                        const opt = document.createElement('option');
+                        opt.value = device.deviceId;
+                        opt.text = device.label;
+                        document.getElementById('audio_device').appendChild(opt);
+                    }
+                    break;
+                }
+            }
+
+            if (navigator.mediaDevices.getDisplayMedia !== undefined) {
+                const opt = document.createElement('option');
+                opt.value = "screen";
+                opt.text = "screen";
+                document.getElementById('video_device').appendChild(opt);
+            }
+
+            if (document.getElementById('video_device').children.length !== 0) {
+                document.getElementById('video_device').value = document.getElementById('video_device').children[1].value;
+            }
+
+            if (document.getElementById('audio_device').children.length !== 0) {
+                document.getElementById('audio_device').value = document.getElementById('audio_device').children[1].value;
+            }
+        });
+};
+
+const populateCodecs = () => {
+    const pc = new RTCPeerConnection({});
+    pc.addTransceiver("video", { direction: 'sendonly' });
+    pc.addTransceiver("audio", { direction: 'sendonly' });
+            for (let codec of ['none','1920*1080','1280*720', '640*480']) {
+                
+                    let opt = document.createElement('option');
+                    opt.value = codec;
+                    opt.text = codec;
+                    document.getElementById('video_quality').appendChild(opt); 
+            }
+            for (let codec of ['30','15']) {
+                
+                    let opt = document.createElement('option');
+                    opt.value = codec;
+                    opt.text = codec;
+                    document.getElementById('video_fps').appendChild(opt); 
+            }
+    return pc.createOffer()
+        .then((desc) => {
+            const sdp = desc.sdp.toLowerCase();
+
+            for (const codec of ['h264/90000']) {
+                if (sdp.includes(codec)) {
+                    const opt = document.createElement('option');
+                    opt.value = codec;
+                    opt.text = codec.split('/')[0].toUpperCase();
+                    document.getElementById('video_codec').appendChild(opt);
+                }
+            }
+
+            for (const codec of ['opus/48000','pcmu/8000', 'pcma/8000']) {
+                if (sdp.includes(codec)) {
+                    const opt = document.createElement('option');
+                    opt.value = codec;
+                    opt.text = codec.split('/')[0].toUpperCase();
+                    document.getElementById('audio_codec').appendChild(opt);
+                }
+            }
+
+            pc.close();
+        });
+
+
+};
+
+const initialize = () => {
+    if (navigator.mediaDevices === undefined) {
+        state = ERROR;
+        errorMessage = '无法访问网络摄像头或麦克风。';
+        render();
+        return;
+    }
+
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+        .then(() => Promise.all([
+            populateDevices(),
+             populateCodecs(),
+        ]))
+        .then(() => {
+            state = DEVICE;
+            render();
+        })
+        .catch((err) => {
+            state = ERROR;
+           // console.log("取设备出错-》",err.toString());
+            errorMessage = err.toString();
+            render();
+        });
+};
+
+document.getElementById("publish_confirm").addEventListener('click', onPublish);
+
+initialize();
+
+</script>
+
+</body>
+</html>

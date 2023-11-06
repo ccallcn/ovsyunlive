@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="ovplayer.min.js" ></script>
+<script src="jquery.min.js"></script>
+<script src="qrcode.min.js"></script> 
+<script>        
+    if (location.search.slice(1)) {
+        var url = { video:location.search.slice(1) };  
+ 
+        if (typeof URLSearchParams != 'undefined') {
+            var params = new URLSearchParams(location.search);
+            if (params.has("video") || params.has("audio")) {
+                url = { video:params.get("video"), audio:params.get("audio") };
+            }
+            if (params.has("options")) {
+                options = params.get("options");
+            }
+        }       
+        window.onload         = function() {
+            var port=":7701";
+            if(window.location.protocol=='https:'){
+                port=":7702";
+            }
+            this.ovplayer = new OvPlayer("video", window.location.protocol+"//"+window.location.hostname+port);
+            document.getElementById("title").innerHTML=url.video; 
+            ovplayer.connect(url.video);
+ 
+           document.getElementById("footer").innerHTML = "<p><a href='http://m.ovmeet.com'> ovplayer极速低延时web,H5,rtsp,rtmp播放器 QQ:1410919373</a>  </p>";           
+           
+        }
+        window.onbeforeunload = function() { this.ovplayer.disconnect() }
+    } else {
+        let url = prompt("输入rtsp/rtmp视频流地址:")
+        if (typeof URLSearchParams != 'undefined') {
+            window.location += (window.location.search ? "&" : "?") + `video=${encodeURI(url)}`;
+        } else {
+            window.location += (window.location.search ? "&" : "?") + `${encodeURI(url)}`;
+        }
+    }
+</script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h2 id="title"></h2>
+        </header>
+        <div id="content">
+          <video id="video" muted playsinline controls></video>
+        </div>
+        <footer id="footer"></footer>     
+    </div>  
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<script src="ovplayer.min.js" ></script>
+<script src="jquery.min.js"></script>
+<script src="qrcode.min.js"></script> 
+<script>        
+ this.ovplayer=null;
+	window.onload  = function() {
+             
+            var port=":7701";
+            if(window.location.protocol=='https:'){
+                port=":7702";
+            }
+            //服务地址
+            this.ovplayer = new OvPlayer("video", window.location.protocol+"//"+window.location.hostname+port);
+			 //rtsp视频地址
+			 ovplayer.connect("rtsp://admin:111111@192.168.1.105/live0.264"); 
+	}
+window.onbeforeunload = function() { this.ovplayer.disconnect() }
+</script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h2 id="title"></h2>
+		</header>
+		<div id="content">
+		  <video id="video" muted playsinline controls></video>
+		</div>
+		<footer id="footer"></footer>	  
+	</div>	
+</body>
+</html>
+
