@@ -11,7 +11,7 @@
 
 web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 
-链接播放：http://m.ovmeet.com:7701/play/:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
+链接播放：http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 
 2、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
 
