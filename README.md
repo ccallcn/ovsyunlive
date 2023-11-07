@@ -74,7 +74,7 @@ SFU会议演示：https://v.ovmeet.com:7777/login.html
 
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
 
-新绿色版直接git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
+视频会议测试绿色包git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
 
 1、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
 
