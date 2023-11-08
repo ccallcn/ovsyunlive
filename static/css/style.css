@@ -1,0 +1,415 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;/*
+	width: 230px;
+	height: 400px;*/	
+}
+
+input[placeholder] {
+    text-overflow:ellipsis;
+}
+
+
+input[placeholder].small-placeholder::-webkit-input-placeholder{
+    font-size: 11px;
+}
+
+#phone .error{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+#phone .call-view-number {
+    max-width: 200px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: copy;
+}
+
+
+#phone .error .error-msg{
+    background-color: red;
+    color: #fff;
+    padding-left: 3px;
+    margin: 3px;
+    cursor: pointer;
+}
+    
+#phone .call-group .btn.circle-btn.icon.ion-ios-videocam.call.make-call-video {
+    position: absolute;
+    top: 0;
+    margin-left: 6px;
+}
+
+#phone .form-group {
+    display: flex;
+}
+
+#phone .form-group select{
+    margin: 5px;
+}
+
+#phone .form-group span {
+    font-size: 50px;
+    width: 60px
+}
+
+#phone .form-group.contact span {
+    font-size: 24px;
+    width: 32px;
+    padding-top: 4px;
+}
+
+/*#phone .call-group:hover .btn.circle-btn.icon.ion-ios-videocam.call.make-call-video:hover {*/
+    /*display: inline;*/
+/*}*/
+
+#phone .dialpad.call-group:hover .btn.circle-btn.icon.ion-ios-videocam.call.make-call-video {
+    display: inline-block;;
+}
+
+#phone .btn.circle-btn:focus {
+    outline:0;
+}
+
+#phone .no-border {
+    border: 0;
+}
+
+#phone form {
+    /*margin: 10px;*/
+}
+
+#phone .content {
+    top: 44px;
+    bottom: 50px;           
+}
+
+#phone .default-text {
+    color: rgba(17, 26, 35, 0.69);
+}
+
+#phone .dialpad-form .dialpad-input {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#phone .dialpad-form .dialpad-input a {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+#phone .call {
+    text-align: center;
+    font-size: 28px;
+}
+
+#phone .table-view.tab-content {
+    position: fixed;
+    top: 90px;
+    overflow-y: auto;
+    bottom: 35px;
+    width: 100%;
+    font-size: 12px;
+}
+
+#phone .table-view.tab-content li{
+    padding: 9px;
+}
+
+#phone .card.card-call video {
+    width: 100%;
+    height: 110px;
+}
+
+#phone .bg-default {
+    background-color: rgba(247, 247, 247, .98);
+}
+
+#phone .call.make-call {
+    color: #fff;
+    background-color: #4cd964;
+}
+
+#phone .hangup-call {
+    color: #fff;
+    background-color: #cf2d28;
+    /* Safari */
+    -webkit-transform: rotate(134deg);
+
+    /* Firefox */
+    -moz-transform: rotate(134deg);
+
+    /* IE */
+    -ms-transform: rotate(134deg);
+
+    /* Opera */
+    -o-transform: rotate(134deg);
+
+}
+
+#phone .bar .segmented-control {
+    width: 100%;
+    border: 0;
+}
+
+#phone ul>li>a:not(:first-child) {
+    margin-left: 10px;
+}
+
+#phone.app {
+    display: none;
+}
+#phone.app.loaded {
+    display: block;
+}
+
+
+#phone .header-call-item {
+    position: relative;
+    height: 27px;
+}
+
+#phone .header-call-item .header-call-number {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    margin: 0px 2px 0px;;
+    padding: 0;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#phone .color-success {
+    color: #4cd964;
+}
+#phone .color-danger {
+    color: #cf2d28;
+}
+#phone .color-default {
+    color: rgba(17, 26, 35, 0.69)
+}
+
+#phone .history-make-call {
+    right: 14px;
+    position: absolute;
+    color: #4cd964;
+    outline:0
+}
+
+#phone .card.card-settings {
+    font-size: 15px;
+}
+
+#phone .card.card-settings input {
+    height: 33px;
+    margin-bottom: 10px;
+}
+#phone .card.card-settings button {
+    margin-top: 15px;
+    height: 30px;
+    width: 100%;
+}
+
+#phone li {
+    list-style: none;
+}
+
+#phone .dialpad > li {
+    width: 100%;
+    text-align: center;
+}
+
+#phone #dialpad .call-btn-group {
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+#phone #dialpad form {
+    height: 279px;
+}
+
+#phone .card.card-call {
+    height: 224px;
+    margin: 0;
+}
+
+#phone .card.card-call-info {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+#phone .card.card-call-footer {
+    margin: 0;
+}
+
+#phone .card.card-call-footer .card-call-btn-close {
+    position: absolute;
+    right: 15px;
+    top: 28px;
+    font-size: 15px;
+}
+
+
+.content .input-number {
+	width: 79%;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+}
+
+.content .input-number-btn {
+	padding-top: 7px;
+}
+.circle-btn {
+	width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 24px;
+    /*line-height: 50px;*/
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    border-radius: 25px;
+}
+
+
+
+.bg-success {
+    background-color: #4cd964;
+    color: #fff;
+}
+
+.bg-danger {
+    background-color: #f0ad4e;
+}
+
+.dialpad {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.content {
+  background-color: #fff;
+}
+
+
+/*CHAT*/
+
+.chat {
+    padding-top: 44px;
+    padding-bottom: 95px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.chat .chat-data {
+    /*height: 78%;*/
+    max-height: 100%;
+    overflow: auto;
+}
+
+.chat .chat-action {
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+    margin-bottom: 5px;
+}
+
+.chat p {
+    color: rgba(17, 26, 35, 0.69);
+}
+
+.chat section {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px auto;
+}
+
+.chat .chat-data div {
+    max-width: 90%;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.chat .clear {clear: both}
+.chat .from-me {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    background: #0B93F6;
+    border-radius: 25px;
+    float: right;
+}
+
+.chat .from-me:before {
+     content:"";
+     position:absolute;
+     z-index:-1;
+     bottom:-2px;
+     right:-7px;
+     height:20px;
+     border-right:20px solid #0B93F6;
+     border-bottom-left-radius: 16px 14px;
+     -webkit-transform:translate(0, -2px);
+}
+
+.chat .from-me::after {
+     content:"";
+     position:absolute;
+     z-index:1;
+     bottom:-2px;
+     right:-56px;
+     width:26px;
+     height:20px;
+     background:white;
+     border-bottom-left-radius: 10px;
+     -webkit-transform:translate(-30px, -2px);
+}
+
+.chat .from-them {
+    position: relative;
+    padding: 10px 20px;
+    background: #E5E5EA;
+    border-radius: 25px;
+    color: black;
+    float: left;
+}
+
+.chat .from-them:before {
+     content:"";
+     position:absolute;
+     z-index:2;
+     bottom:-2px;
+     left:-7px;
+     height:20px;
+     border-left:20px solid #E5E5EA;
+     border-bottom-right-radius: 16px 14px;
+     -webkit-transform:translate(0, -2px);
+}
+
+.chat .from-them:after {
+     content:"";
+     position:absolute;
+     z-index:3;
+     bottom:-2px;
+     left:4px;
+     width:26px;
+     height:20px;
+     background:white;
+     border-bottom-right-radius: 10px;
+     -webkit-transform:translate(-30px, -2px);
+}

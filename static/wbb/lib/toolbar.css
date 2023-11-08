@@ -1,0 +1,228 @@
+body {
+  background-color: #cccccc;
+  height: 100%;
+  width: 100%; 
+  overflow-y:scroll; 
+  overflow-x:hidden;
+  text-align:center;
+  margin: 0px;
+  margin-top: 0px; 
+}
+
+body .content {
+  position: fixed; 
+  background-color: #cccccc;
+  width: 100%;
+  height:  100% ;
+  overflow-y: auto;
+ /* overflow-y: scroll; */
+  overflow-x:hidden;
+}
+
+ 
+
+.tool-bar { 
+    position: fixed;
+    bottom: 0px;
+    background-color: #3C3C3C; 
+    border-radius: 6px;
+    width:720px; height:44px;
+	text-align:center;
+    left:0px; 
+    right: 0px;
+    margin: auto;
+    z-index: 91;
+}
+.tool {
+    border-radius: 7px;
+    width: 40px;
+    background-color: #3C3C3C;
+    margin: 1px;
+    margin-top: 2px; 
+     z-index: 99;
+}
+
+.tool:hover {
+    cursor: pointer;
+}
+.record-div {
+    float: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 20px;
+    z-index: 999;
+} 
+.tool-style {
+    position: absolute;
+            left:0px; 
+            right: 0px;
+            margin: auto;
+    bottom: 44px;
+    background-color: #5d5d5d;
+    height: 45px;
+    width: 442px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+    z-index: 3;
+    display:none;
+    transform: scale(1);
+}
+
+.tool-style-display {
+   display:block;
+}
+
+
+
+.stroke-width {
+    border-radius: 6px;
+    width: 40px;
+    margin: 3px; 
+}
+
+.stroke-width:hover {
+    cursor: pointer;
+}
+
+.stroke-color {
+    float: right;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    transition: border-color 2s;
+}
+
+.size-select-frame {
+    background-color: #3C3C3C;
+}
+
+.color-select-frame {
+    border: 5px solid #3C3C3C;
+    margin: 0px;
+    width: 38px;
+    height: 38px;
+}
+
+.stroke-color:hover {
+    cursor: pointer;
+}
+
+.line {
+    height: 40px;
+    width: 1px;
+    border-left: 2px solid #9E9E9E;
+    margin: 3px;
+    margin-right: 12px;
+    /* float: right; */
+    margin-left: 152px;
+}
+
+.stroke-size-div {
+    float: left;
+}
+
+.font-size-div {
+    float: left;
+}
+
+.tool-tip {
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 2;
+    background-color: #fafafa;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.tooltip-img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.tooltip-x {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.tooltip-x:hover {
+    cursor: pointer;
+}
+
+.tooltip-text {
+    font-size: 18px;
+    color: #333333;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn {
+    float: left;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 9px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    padding-top: 6px;
+    margin-top: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #666;
+}
+
+.confirm-btn {
+    background-color: rgb(253, 62, 57);
+    color: #ffffff;
+}
+
+.confirm-btn:hover {
+    background-color: rgba(253, 62, 57, 0.7);
+}
+
+.confirm-btn:active {
+    background-color: rgba(253, 62, 57, 0.9);
+}
+
+.cancel-btn {
+    background-color: #ffffff;
+}
+
+.cancel-btn:hover {
+    color: rgb(230, 80, 30);
+}
+
+.cancel-btn:active {
+    color: rgba(230, 80, 30, 0.8);
+}
+
+.chat::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #2b2f38;
+}
+.chat::-webkit-scrollbar-thumb {
+    min-height: 5px;
+    min-width: 5px;
+    -webkit-border-radius: 20px;
+    border: 1px solid #1e2329;
+    ::-webkit-border-radius: 1px;background-color: #1e2329;
+}
