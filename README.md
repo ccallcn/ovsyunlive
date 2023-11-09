@@ -31,6 +31,14 @@ http://IP:7701/play/index.html
 
 http://IP:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 
+网页代码接入，两行代码接入详见目录/www/play/demo.html：
+//引入库
+<script src="ovplayer.min.js" ></script>
+//"video"是Html5标准video控制，后面是程序安装的服务器地址
+this.ovplayer = new OvPlayer("video", window.location.protocol+"//"+window.location.hostname+port);
+//rtsp视频地址
+ovplayer.connect("rtsp://196.21.92.82/axis-media/media.amp"); 
+
 5、其它推流播放测试：
 
 推流地址：rtmp://IP:1937/live/test001
