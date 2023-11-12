@@ -1,7 +1,15 @@
 ﻿﻿# ovsyunlive
 这是一套网页直播,监控,视频会议,视频对讲,Web视频推流,Web免插件极速rtsp/rtmp播放，电子游戏直播，桌面远程控制，游戏远控，支持H5监控直播，微信直播会议，RTSP、RTMP网页低延时播放，支持srt,Webrtc,http-flv,ws-flv,Pc可以不用flash,全套低延时,针对硬件游戏机远控推流做了低延时的转码和转发,能在线H5互动游戏,web监控,低延时解决方案,此项目后台Web管理开源，整套方案提供绿色安装包.
 
-特点：H5，Web推流rtmp/rtsp，Web免插件rtmp/rtsp/Webrtc播放，Web极低延时200毫秒直播测试：
+特点：
+
+Web免插件rtmp/rtsp/Webrtc播放， Web直接推流rtmp/rtsp
+
+智能分发播放，如拉rtsp播放，多个终端同时会只拉路rtsp再分发到终端，减少多路采拉rtsp。
+
+自动智能音频转码，播放自动转码到浏览器识别的，web推流rtmp自动转码为H264,AAC为大众平台兼容。
+
+Web极低延时200毫秒左右的直播推流和播放：
 
 1、github上面国内下载不稳定，这里提供国内绿色下载包，Windows上解压
 
