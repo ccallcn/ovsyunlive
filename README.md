@@ -77,7 +77,7 @@ MCU会议演示：https://w.ovmeet.com:9301/login.html
 
 SFU会议演示：https://m.ovmeet.com:7777
 
-会议本地测试下载老版本： https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
+会议本地测试下载版本： https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
 
 会议本地测试见后面说明
 
@@ -102,7 +102,7 @@ SFU会议演示：https://m.ovmeet.com:7777
 
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
 
-会议本地下载测试老版本：
+会议本地下载测试：
 
 视频会议测试绿色包git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
 
