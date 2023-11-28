@@ -71,7 +71,17 @@ srt播放地址：srt://IP:7900?streamid=#!::h=live/12345,m=request
 
 ws-flv播放地址: ws://IP:7701/live/流id.flv
 
-6、管理平台http://IP:8800/ 用户:admin 密码:123456
+6、视频会议功能演示：
+
+MCU会议演示：https://w.ovmeet.com:9301/login.html
+
+SFU会议演示：https://m.ovmeet.com:7777
+
+会议本地测试下载老版本： https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
+
+会议本地测试见后面说明
+
+7、管理平台http://IP:8800/ 用户:admin 密码:123456
 
  拉流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id(随机生成，或自已填写) 
 
@@ -80,11 +90,7 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.png" /></p>
-视频会议功能演示：
 
-MCU会议演示：https://w.ovmeet.com:9301/login.html
-
-SFU会议演示：https://v.ovmeet.com:7777/login.html
 
 支持Webrtc,rtsp,rtmp,直播用户参会
 
@@ -95,6 +101,8 @@ SFU会议演示：https://v.ovmeet.com:7777/login.html
 支持全平台（pc,android,ios）
 
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
+
+会议本地下载测试老版本：
 
 视频会议测试绿色包git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
 
