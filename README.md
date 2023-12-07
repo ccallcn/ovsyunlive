@@ -23,9 +23,19 @@ web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 
 商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
-2、启动前修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
+2、视频会议功能演示：
 
-3、双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统
+MCU会议演示：https://w.ovmeet.com:9301/login.html
+
+SFU会议演示：https://m.ovmeet.com:7777
+
+3、Flv低延时播放器,全平台,支持H265,易集成，在线测试：
+
+http://m.ovmeet.com:8082/ovplayerflv/ （要授权）
+
+4、直播测试前修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
+
+5、双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统
 
 Web在线rtmp/rtsp推流测试：
 
@@ -53,7 +63,7 @@ this.ovplayer = new OvPlayer("video", window.location.protocol+"//"+window.locat
 
 ovplayer.connect("rtsp://196.21.92.82/axis-media/media.amp"); 
 
-5、其它推流播放测试：
+7、其它推流播放测试：
 
 推流地址：rtmp://IP:1937/live/test001
 
@@ -71,21 +81,15 @@ srt播放地址：srt://IP:7900?streamid=#!::h=live/12345,m=request
 
 ws-flv播放地址: ws://IP:7701/live/流id.flv
 
-6、视频会议功能演示：
-
-MCU会议演示：https://w.ovmeet.com:9301/login.html
-
-SFU会议演示：https://m.ovmeet.com:7777
-
-会议本地测试下载版本： https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
-
-会议本地测试见后面说明
-
-7、管理平台http://IP:8800/ 用户:admin 密码:123456
+8、管理平台http://IP:8800/ 用户:admin 密码:123456
 
  拉流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id(随机生成，或自已填写) 
 
  播放列表，查看流列表在线状态和在线直接播放
+
+9，视频会议测试绿色包git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
+
+会议测试详见后面说明
 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
