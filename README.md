@@ -25,7 +25,7 @@ web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 
 2、视频会议，媒体中心，指挥调度功能（商用功能）演示：
 
-MCU会议演示：https://v.ovmeet.com:9902/index.html
+MCU+SFU媒体中心演示：https://v.ovmeet.com:9902/index.html
 
 SFU会议演示：https://m.ovmeet.com:7777
 
