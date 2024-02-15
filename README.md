@@ -27,8 +27,6 @@ web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 
 MCU+SFU媒体中心(流媒体内核)演示：https://v.ovmeet.com:9902/index.html
 
-MCU-SIP视频会议(VOIP内核方便对接SIP终端和硬件)演示：https://w.ovmeet.com:9301/login.html
-
 SFU会议演示：https://m.ovmeet.com:7777
 
 3、Flv低延时播放器,全平台,支持H265,易集成，在线测试：
