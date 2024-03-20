@@ -23,9 +23,13 @@ web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 
 商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
-2、视频会议，媒体中心，指挥调度功能（商用功能）演示：
+2、视频会议，媒体中心，指挥调度功能（视频互动商用产品）：
+
+多协议rtmp/rtsp/webrtc/sip/融合 多屏多硬件HDMI/AV/USB/TYPE-C接入
 
 MCU+SFU媒体中心(流媒体内核)演示：https://v.ovmeet.com:9902/index.html
+
+MCU-SIP(VOIP)演示：https://w.ovmeet.com:9301/login.html
 
 SFU会议演示：https://m.ovmeet.com:7777
 
