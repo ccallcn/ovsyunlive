@@ -21,17 +21,17 @@ web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 
 链接播放：http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 
-商用支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
+视频会议测试：https://m.ovmeet.com:7777
 
-2、视频会议，媒体中心，指挥调度功能（视频互动商用产品）：
+测试为演示版，不定时调整更新，商用需要授权，支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
+
+2、视频会议，媒体中心，指挥调度功能（其它视频互动商用产品）：
 
 多协议rtmp/rtsp/webrtc/sip/融合 多屏多硬件HDMI/AV/USB/TYPE-C接入
 
 MCU+SFU媒体中心(流媒体内核)演示：https://v.ovmeet.com:9902/index.html
 
 MCU-SIP(VOIP)演示：https://w.ovmeet.com:9301/login.html
-
-SFU会议演示：https://m.ovmeet.com:7777
 
 3、Flv低延时播放器,全平台,支持H265,易集成，在线测试：
 
@@ -91,14 +91,7 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
 
  播放列表，查看流列表在线状态和在线直接播放
 
-9，视频会议测试绿色包git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
-
-会议测试详见后面说明
-
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.png" /></p>
-
+9，视频会议测试
 
 支持Webrtc,rtsp,rtmp,直播用户参会
 
@@ -108,21 +101,27 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
 
 支持全平台（pc,android,ios）
 
+一键开会，会议测试地址:https://IP:7777
+
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
 
-会议本地下载测试：
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.png" /></p>
 
-视频会议测试绿色包git下载 https://github.com/ccallcn/ovsyunlive/archive/8.10.zip
+会议一键登录api: https://IP:7777/join?room=test1111&password=0&name=vimeet001&audio=1&video=1&screen=0&notify=0
 
-1、修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
+    | 参数        | 类型           | 说明              |
+    | ---------- | ----------- | --------------- |
+    | room       | string         | 房间ID   |
+    | password | string/boolean | 房间密码  |
+    | name       | string         | 用户名      |
+    | audio       | boolean     | 打开音频    |
+    | video       | boolean      |  打开视频    |
+    | screen      | boolean      | 打开桌面分享   |
+    | notify       | boolean      | 消息提示 |
 
-2、 修改ovsyunlive.conf里面的candidate IP;为你安装机子上的IP（内网用内网IP,公网要用公网IP）
 
-4、双击启动start.bat  停止，stop.bat
-
-4、运行路径和流ID不要带中文字符
-
-5，Web测试地址:https://IP:7777/login.html, 帐号随机登录就用，稍懂html也可以login.html自已调调
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
