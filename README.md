@@ -3,13 +3,15 @@
 
 特点：
 
-Web免插件rtmp/rtsp/Webrtc播放， Web直接推流rtmp/rtsp
+**极简Web免插件rtmp/rtsp/webrtc播放(二行代码)， Web低延时在线 直接推流rtmp/rtsp/webrtc
+
+极简Web自建视频会议，私有云，视频交互项目，绿色启动，webrtc/rtsp/rtmp 一键参会，一链分享接入
 
 智能分发播放，如拉rtsp播放，多个终端同时会只拉路rtsp再分发到终端，减少多路采拉rtsp。
 
 自动智能音频转码，播放自动转码到浏览器识别的，web推流rtmp自动转码为H264,AAC为大众平台兼容。
 
-Web极低延时200毫秒左右的直播推流和播放：
+Web极低延时200毫秒左右的直播推流和播放，web在线低延时会议直播推流（可定调Web会议在线直播推流） *
 
 1、github上面国内下载不稳定，这里提供国内绿色下载包，Windows上解压
 
@@ -22,8 +24,6 @@ web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 链接播放：http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 
 视频会议测试：https://m.ovmeet.com:7777
-
-测试为演示版，不定时调整更新，商用需要授权，支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
 2、视频会议，媒体中心，指挥调度功能（其它视频互动商用产品）：
 
@@ -104,6 +104,8 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
 一键开会，会议测试地址:https://IP:7777
 
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
+
+测试为演示版，不定时调整更新，商用需要授权，支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20220511161931.png" /></p>
