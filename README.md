@@ -15,11 +15,11 @@ Web极低延时200毫秒左右的直播推流和播放，web在线低延时会�
 
 1、github上面国内下载不稳定，这里提供国内绿色下载包，Windows上解压
 
+播放webrtc/rtsp/rtmp演示介绍：http://m.ovmeet.com:7701/play/index.html
+
 国内下载： http://m.ovmeet.com/ovsyunlive.zip
 
 在线推流演示：https://m.ovmeet.com:7702/pub/index.html
-
-web播放rtsp/rtmp演示：http://m.ovmeet.com:7701/play/index.html
 
 链接播放：http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 
