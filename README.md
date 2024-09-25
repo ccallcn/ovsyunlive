@@ -15,9 +15,13 @@
 
 1、github上面国内下载不稳定，这里提供国内绿色下载包，Windows上解压
 
-播放webrtc/rtsp/rtmp演示介绍：http://m.ovmeet.com:7701/play/index.html
+下载安装： http://m.ovmeet.com/ovsyunlive.zip
 
-国内下载： http://m.ovmeet.com/ovsyunlive.zip
+配置测试前修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
+
+双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统
+
+播放webrtc/rtsp/rtmp演示介绍：http://m.ovmeet.com:7701/play/index.html
 
 在线推流演示：https://m.ovmeet.com:7702/pub/index.html
 
@@ -36,10 +40,6 @@ MCU-SIP(VOIP)演示：https://w.ovmeet.com:9301/login.html
 3、Flv低延时播放器,全平台,支持H265,易集成，在线测试：
 
 http://m.ovmeet.com:8082/ovplayerflv/ （要授权）
-
-4、直播测试前修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
-
-5、双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统
 
 Web在线rtmp/rtsp推流测试：
 
