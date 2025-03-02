@@ -17,7 +17,6 @@ Win64测试包：<a href='https://m.ovmeet.com/ovsyunlive.zip'>https://m.ovmeet.
 Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive11-linux.zip'>https://m.ovmeet.com/ovsyunlive11-linux.zip</a><br />
 双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统<br />
 服务程序在公网上，要配ovmedia.ini的exthost=公网IP.(内网也可以配内网IP重启)<br />
-github地址:<a href='https://github.com/ccallcn/ovsyunlive'>https://github.com/ccallcn/ovsyunlive</a><br />
 <br />
 1.启动会议地址:<a href='https://localhost:9903'>https://localhost:9903</a> <br />
 在线融合会议:<a href='https://m.ovmeet.com:9903'>https://m.ovmeet.com:9903</a> <br />
