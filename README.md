@@ -37,7 +37,6 @@ var srvurl="http://localhost:7701";<br />
 this.ovplayer = new OvPlayer("video",srvurl);<br />
 //要播放的rtsp/rtmp视频地址<br />
 ovplayer.connect("rtsp://196.21.92.82/axis-media/media.amp"); <br />
-
 <br />
 3、Flv低延时播放器,全平台,支持H265,易集成，在线测试：
 <br />
@@ -101,17 +100,6 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519124506.png" /></p>
 <br />
 会议一键登录api: https://IP:7777/join?room=test1111&password=0&name=vimeet001&audio=1&video=1&screen=0&notify=0
-<br />
-    | 参数        | 类型           | 说明              |
-    | ---------- | ----------- | --------------- |
-    | room       | string         | 房间ID   |
-    | password | string/boolean | 房间密码  |
-    | name       | string         | 用户名      |
-    | audio       | boolean     | 打开音频    |
-    | video       | boolean      |  打开视频    |
-    | screen      | boolean      | 打开桌面分享   |
-    | notify       | boolean      | 消息提示 |
-<br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120755.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120849.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
