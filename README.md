@@ -13,22 +13,23 @@
 
 **Web极低延时200毫秒左右的直播推流和播放，web在线低延时会议直播推流（可定调Web会议在线直播推流）**
 
-1、github上面国内下载不稳定，这里提供国内绿色下载包，Windows上解压
-
-下载安装： http://m.ovmeet.com/ovsyunlive.zip
-
-配置测试前修改ovsyunmedia.ini里面的exthost为你安装机子上的IP（内网用内网IP,公网要用公网IP）
-
-双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统
-
-播放webrtc/rtsp/rtmp演示介绍：http://m.ovmeet.com:7701/play/index.html
-
-在线推流演示：https://m.ovmeet.com:7702/pub/index.html
-
-链接播放：http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
-
-视频会议测试：https://m.ovmeet.com:7777
-
+Win64测试包：<a href='http://m.ovmeet.com/ovsyunlive.zip'>http://m.ovmeet.com/ovsyunlive.zip</a><br />
+Linux测试包：<a href='http://m.ovmeet.com/ovsyunlive11-linux.zip'>http://m.ovmeet.com/ovsyunlive-linux.zip</a><br />
+双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统<br />
+服务程序在公网上，要配ovmedia.ini的exthost=公网IP.(内网也可以配内网IP重启)<br />
+github地址:<a href='https://github.com/ccallcn/ovsyunlive'>https://github.com/ccallcn/ovsyunlive</a><br />
+<br />
+1.启动会议地址:<a href='https://localhost:9903'>https://localhost:9903</a> <br />
+在线融合会议:<a href='https://m.ovmeet.com:9903'>https://m.ovmeet.com:9903</a> <br />
+在线一键会议:<a href='https://m.ovmeet.com:7777'>https://m.ovmeet.com:7777</a> <br />
+<br />
+2.超低延播放器代码集成：参考play/demo.html代码，网页嵌入ovplayer.min.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
+//ovsyunlive运行的服务地址 <br />
+var srvurl="http://localhost:7701";<br />
+this.ovplayer = new OvPlayer("video",srvurl);<br />
+//要播放的rtsp/rtmp视频地址<br />
+ovplayer.connect("rtsp://196.21.92.82/axis-media/media.amp"); <br />
+      
 2、视频会议，媒体中心，指挥调度功能（其它视频互动商用产品）：
 
 多协议rtmp/rtsp/webrtc/sip/融合 多屏多硬件HDMI/AV/USB/TYPE-C接入
