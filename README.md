@@ -21,6 +21,7 @@ Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive11-linux.zip'>https://m
 解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br />
 LiveMeet-GB28181/SIP/MCU/SFU融合会议测试包：http://m.ovmeet.com/ovsyunlive11.zip<br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ截图20250319110346.png" /></p>
+有业务需求可以联系 QQ:1410919373 QQ群:216403866
 1.启动会议地址:https://127.0.0.1:9903<br />
 演示融合会议:https://m.ovmeet.com:9903<br />
 演示一键会议:https://m.ovmeet.com:7777<br />
