@@ -47,15 +47,15 @@ http://m.ovmeet.com:8082/ovplayerflv/ （要授权）
 <br />
 Web在线rtmp/rtsp推流测试：
 <br />
-https://IP:7702/pub/index.html
+https://m.ovmeet.com:7702/pub/index.html
 <br />
 Web播放rtmp/rtsp/webrtc/ovplayw：
 <br />
-http://IP:7701/play/index.html
+http://m.ovmeet.com:7701/play/index.html
 <br />
 链接播放rtsp/rtmp:
 <br />
-http://IP:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
+http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 <br />
 <br />
 7、其它推流播放测试：
@@ -92,7 +92,7 @@ ws-flv播放地址: ws://IP:7701/live/流id.flv
 <br />
 支持全平台（pc,android,ios）
 <br />
-一键开会，会议测试地址:https://IP:7777
+一键开会，会议测试地址:https://m.ovmeet.com:7777
 <br />
 注意：需要浏览器支持Webrtc,建议Chrome浏览器
 <br />
