@@ -22,7 +22,7 @@ Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive11-linux.zip'>https://m
 支持：低延时分布式多节点游戏直播
 <br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/20251021163335.png" /></p>
-直播测试：
+1.直播推流测试：
 <br />
 推流地址：rtmp://IP:1937/live/test001
 <br />
@@ -39,25 +39,6 @@ flv播放地址: http://IP:7701/live/流id.flv
 srt播放地址：srt://IP:7900?streamid=#!::h=live/12345,m=request
 <br />
 ws-flv播放地址: ws://IP:7701/live/流id.flv
-<br />
-解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br />
-LiveMeet-GB28181/SIP/MCU/SFU融合会议测试包：http://m.ovmeet.com/ovsyunlive11.zip<br />
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ截图20250319110346.png" /></p>
-有业务需求可以联系 QQ:1410919373 QQ群:216403866
-
-1.启动会议地址:https://127.0.0.1:9903<br />
-演示融合会议:https://m.ovmeet.com:9903<br />
-演示一键会议:https://m.ovmeet.com:7777<br />
-演示播放器:https://m.ovmeet.com:7702/play/<br />
-<br />
-视频会议，媒体中心，指挥调度功能（其它视频互动商用产品）：
-<br />
-多协议rtmp/rtsp/webrtc/sip/融合 多屏多硬件HDMI/AV/USB/TYPE-C接入
-<br />
-MCU+SFU媒体中心(流媒体内核)演示：https://v.ovmeet.com:9902/index.html
-<br />
-MCU-SIP(VOIP)演示：https://w.ovmeet.com:9301/login.html
-
 2.超低延播放器代码集成：网页代码接入，两行代码接入,参考play/demo.html代码，网页嵌入ovplayer.min.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
 //ovsyunlive运行的服务地址 <br />
 var srvurl="http://localhost:7701";<br />
@@ -82,7 +63,25 @@ http://m.ovmeet.com:7701/play/index.html
 http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 <br />
 <br />
-4，视频会议测试
+<br />
+解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br />
+LiveMeet-GB28181/SIP/MCU/SFU融合会议测试包：http://m.ovmeet.com/ovsyunlive11.zip<br />
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ截图20250319110346.png" /></p>
+有业务需求可以联系 QQ:1410919373 QQ群:216403866
+
+1.启动会议地址:https://127.0.0.1:9903<br />
+演示融合会议:https://m.ovmeet.com:9903<br />
+演示一键会议:https://m.ovmeet.com:7777<br />
+演示播放器:https://m.ovmeet.com:7702/play/<br />
+<br />
+视频会议，媒体中心，指挥调度功能（其它视频互动商用产品）：
+<br />
+多协议rtmp/rtsp/webrtc/sip/融合 多屏多硬件HDMI/AV/USB/TYPE-C接入
+<br />
+MCU+SFU媒体中心(流媒体内核)演示：https://v.ovmeet.com:9902/index.html
+<br />
+MCU-SIP(VOIP)演示：https://w.ovmeet.com:9301/login.html
+2，视频会议测试
 <br />
 支持Webrtc,rtsp,rtmp,直播用户参会
 <br />
