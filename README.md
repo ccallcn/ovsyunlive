@@ -20,7 +20,25 @@ Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive11-linux.zip'>https://m
 服务程序配IP，要配ovmedia.ini的exthost=公网IP.(内网也可以配内网IP重启)<br />
 <br />
 支持：低延时分布式多节点游戏直播
+<br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/20251021163335.png" /></p>
+直播测试：
+<br />
+推流地址：rtmp://IP:1937/live/test001
+<br />
+Web播放地址：http://IP:7701/play/index.html
+<br />
+rtmp播流地址：rtmp://IP:1937/live/test001
+<br />
+rtsp播流地址：rtsp://IP:7554/live/test001
+<br />
+webrtc播流地址：webrtc://IP:7701/live/test001
+<br />
+flv播放地址: http://IP:7701/live/流id.flv
+<br />
+srt播放地址：srt://IP:7900?streamid=#!::h=live/12345,m=request
+<br />
+ws-flv播放地址: ws://IP:7701/live/流id.flv
 <br />
 解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br />
 LiveMeet-GB28181/SIP/MCU/SFU融合会议测试包：http://m.ovmeet.com/ovsyunlive11.zip<br />
@@ -64,31 +82,7 @@ http://m.ovmeet.com:7701/play/index.html
 http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 <br />
 <br />
-7、其它推流播放测试：
-<br />
-推流地址：rtmp://IP:1937/live/test001
-<br />
-Web播放地址：http://IP:7701/play/index.html
-<br />
-rtmp播流地址：rtmp://IP:1937/live/test001
-<br />
-rtsp播流地址：rtsp://IP:7554/live/test001
-<br />
-webrtc播流地址：webrtc://IP:7701/live/test001
-<br />
-flv播放地址: http://IP:7701/live/流id.flv
-<br />
-srt播放地址：srt://IP:7900?streamid=#!::h=live/12345,m=request
-<br />
-ws-flv播放地址: ws://IP:7701/live/流id.flv
-<br /><br />
-8、管理平台http://IP:8800/ 用户:admin 密码:123456
-<br />
- 拉流列表，添加拉流（支持rtmp,rtsp,监控摄像头） 目标本地地址：rtmp://127.0.0.1:1937/live/流id(随机生成，或自已填写) 
-<br />
- 播放列表，查看流列表在线状态和在线直接播放
-<br /><br />
-9，视频会议测试
+4，视频会议测试
 <br />
 支持Webrtc,rtsp,rtmp,直播用户参会
 <br />
