@@ -40,6 +40,7 @@ srt播放地址：srt://IP:7900?streamid=#!::h=live/12345,m=request
 <br />
 ws-flv播放地址: ws://IP:7701/live/流id.flv
 <br />
+<br />
 2.超低延播放器代码集成：网页代码接入，两行代码接入,参考play/demo.html代码，网页嵌入ovplayer.min.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
 //ovsyunlive运行的服务地址 <br />
 var srvurl="http://localhost:7701";<br />
