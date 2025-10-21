@@ -19,7 +19,7 @@ Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive11-linux.zip'>https://m
 双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统<br />
 服务程序配IP，要配ovmedia.ini的exthost=公网IP.(内网也可以配内网IP重启)<br />
 <br />
-支持低延时分布式多节点游戏直播
+支持：低延时分布式多节点游戏直播
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/20251021163335.png" /></p>
 <br />
 解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br />
