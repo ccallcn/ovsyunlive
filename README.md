@@ -19,7 +19,7 @@ Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive11-linux.zip'>https://m
 双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux系统<br />
 服务程序配IP，要配ovmedia.ini的exthost=公网IP.(内网也可以配内网IP重启)<br />
 <br />
-支持：低延时极简部署分布式多节点街机游戏直播
+支持：低延时极简部署支持街机游戏直播分布式集群,前置节点与视频源服务节点分离,自建平台
 <br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/20251021163335.png" /></p>
 1.直播推流测试：
