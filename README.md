@@ -66,7 +66,7 @@ http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 <br />
 <br />
 <br />
-解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br />
+会议解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br />
 LiveMeet-GB28181/SIP/MCU/SFU融合会议测试包：http://m.ovmeet.com/ovsyunlive11.zip<br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ截图20250319110346.png" /></p>
 有业务需求可以联系 QQ:1410919373 QQ群:216403866
