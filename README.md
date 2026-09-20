@@ -50,8 +50,6 @@ ovplayer.connect("rtsp://196.21.92.82/axis-media/media.amp"); <br />
 <br />
 3、Flv低延时播放器,全平台,支持H265,易集成，在线测试：
 <br />
-http://m.ovmeet.com:8082/ovplayerflv/ （要授权）
-<br />
 Web在线rtmp/rtsp推流测试：
 <br />
 https://m.ovmeet.com:7702/pub/index.html
