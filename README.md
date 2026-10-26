@@ -36,27 +36,16 @@ webrtc播流地址：webrtc://IP:7703/live/test001
 2.超低延播放器代码集成：网页代码接入，两行代码接入,参考play/demo-autoplay.html代码，网页嵌入ovplayer.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
 //ovsyunlive运行的服务地址 <br />
     var player = new OvPlayer('#video', {server: 'http://' + location.hostname + ':7703', password: '', muted: true,});<br />
-    // ② 播放：随便哪种地址<br />
+    // ② 播放：随便哪种地址 rtsp,rtmp,whep,webrtc,ovplayw,桌面和摄像头<br />
     player.play('rtsp://192.168.1.64:554/Streaming/Channels/101');<br />
     // player.play('whep://192.168.0.13:7703/live/cam1');<br />
     // player.play('http://192.168.0.13:7703/whep/?app=live&stream=cam1');<br />
     // player.playDesktop(); 主机主屏<br />
     // player.playCamera();　主机摄像头<br />
-    // ③ 停止（会通知 MCU 结束观看会话，回收转发资源）<br />
+    // ③ 停止 <br />
     // player.stop(); <br />
 <br />
-3、Flv低延时播放器,全平台,支持H265,易集成，在线测试：
-<br />
-Web在线rtmp/rtsp推流测试：
-<br />
-https://m.ovmeet.com:7702/pub/index.html
-<br />
-Web播放rtmp/rtsp/webrtc/ovplayw：
-<br />
-http://m.ovmeet.com:7701/play/index.html
-<br />
-链接播放rtsp/rtmp:
-<br />
+3、全平台低延时播放器,支持H265,易集成，在线测试：
 http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 <br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-desk.png" /></p>
