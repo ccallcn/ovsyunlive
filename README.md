@@ -17,8 +17,8 @@
 <br />
 商业需求QQ:1410919373 QQ群：216403866<br />​
 
-Win64测试包：<a href='http://m.ovmeet.com/ovsyunlive13-windows.zip'>http://m.ovmeet.com/ovsyunlive13-windows.zip</a><br />
-Linux测试包：<a href='http://m.ovmeet.com/ovsyunlive13-linux.zip'>http://m.ovmeet.com/ovsyunlive13-linux.zip</a><br />
+Win64测试包：<a href='https://m.ovmeet.com/ovsyunlive13-windows.zip'>https://m.ovmeet.com/ovsyunlive13-windows.zip</a><br />
+Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive13-linux.zip'>https://m.ovmeet.com/ovsyunlive13-linux.zip</a><br />
 Windows系统，1.解压  2.配ovmeetmcu.ini上IP  3.运行 双击start.bat  4.停止：stop.bat <br />
 Linux系统，  1.解压  2.配ovmeetmcu.ini上IP  3.授权 chmod -R 777 ./ovsyunlive/*  4.运行 ./start.sh  5.停止：./stop.sh <br />
 服务程序配IP，要配ovmeetmcu.ini的public_ip =公网IP.(内网也可以配内网IP重启)<br />
