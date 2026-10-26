@@ -17,7 +17,7 @@
 Win64测试包：<a href='https://m.ovmeet.com/ovsyunlive13-windows.zip'>https://m.ovmeet.com/ovsyunlive13-windows.zip</a><br />
 Linux-debian12测试包：<a href='https://m.ovmeet.com/ovsyunlive13-linux.zip'>https://m.ovmeet.com/ovsyunlive13-linux.zip</a><br />
 双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux,Arm-Linux,MAC,Android系统可以定制指定设备<br />
-公网服务程序配IP，要配ovmediamcu.ini的public_ip=公网IP.(内网也可以配内网IP重启)<br />
+公网服务程序配IP，要配ovmeetmcu.ini的public_ip=公网IP.(内网也可以配内网IP重启)<br />
 <br />
 支持：低延时极简部署支持街机游戏直播分布式集群,前置节点与视频源服务节点分离,自建平台
 <br />
