@@ -36,13 +36,13 @@ webrtc播流地址：webrtc://IP:7703/live/test001
 2.超低延播放器代码集成：网页代码接入，两行代码接入,参考play/demo-autoplay.html代码，网页嵌入ovplayer.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
 //ovsyunlive运行的服务地址 <br />
     var player = new OvPlayer('#video', {server: 'http://' + location.hostname + ':7703', password: '', muted: true,});<br />
-    // ② 播放：随便哪种地址 rtsp,rtmp,whep,webrtc,ovplayw,桌面和摄像头<br />
+    // 播放：随便哪种地址 rtsp,rtmp,whep,webrtc,ovplayw,桌面和摄像头<br />
     player.play('rtsp://192.168.1.64:554/Streaming/Channels/101');<br />
-    // player.play('whep://192.168.0.13:7703/live/cam1');<br />
+    player.play('whep://192.168.0.13:7703/live/cam1');<br />
     // player.play('http://192.168.0.13:7703/whep/?app=live&stream=cam1');<br />
     // player.playDesktop(); 主机主屏<br />
     // player.playCamera();　主机摄像头<br />
-    // ③ 停止 <br />
+    // 停止 <br />
     // player.stop(); <br />
 <br />
 3、全平台低延时播放器,支持H265,易集成，在线测试：
