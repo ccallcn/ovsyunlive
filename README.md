@@ -73,8 +73,7 @@ OvMeet-MCU演示：https://m.ovmeet.com:9903 商业需求QQ:1410919373 ​<br />
 OvMeet-PBX演示：https://w.ovmeet.com:3301　<br />
 OvMeet-PBX下载：http://www.ovmeet.com/pbx/index.html win绿色安装包<br />
 SIP/WEBRTC/RTSP/融合系统 
-<p align="center"><img  src="./QQ截图20260920081601.png" /></p><br />
-会议一键登录api: https://IP:7777/join?room=test1111&password=0&name=vimeet001&audio=1&video=1&screen=0&notify=0
+<p align="center"><img  src="./QQ截图20260920081601.png" /></p><br /> 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-pan.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-list.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/TIM截图20190519120935.png" /></p>
