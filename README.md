@@ -14,27 +14,18 @@
 **Web极低延时200毫秒左右的直播推流和播放，web在线低延时会议直播推流（可定调Web会议在线直播推流）**
 
 演示下载:https://m.ovmeet.com:7702/play/<br />
-Win64测试包：<a href='https://m.ovmeet.com/ovsyunlive13-windows.zip'>https://m.ovmeet.com/ovsyunlive13-windows.zip</a><br />
-Linux-debian12测试包：<a href='https://m.ovmeet.com/ovsyunlive13-linux.zip'>https://m.ovmeet.com/ovsyunlive13-linux.zip</a><br />
-双击运行，start.bat  停止：stop.bat  商用版支持Windows,Linux,Arm-Linux,MAC,Android系统可以定制指定设备<br />
-公网服务程序配IP，要配ovmeetmcu.ini的public_ip=公网IP.(内网也可以配内网IP重启)<br />
-<br />
-支持：低延时极简部署支持街机游戏直播分布式集群,前置节点与视频源服务节点分离,自建平台
-<br />
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/20251021163335.png" /></p>
-1.直播推流测试：
-<br />
-推流地址：[whip://IP:7703/whip//live/test001](http://IP:7703/whip/?app=live&stream=test001)
-<br />
-Web播放地址：whep://IP:7703/whep/?app=live&stream=test001
-<br />
-rtsp播流地址：rtsp://IP:7754/live/test001
-<br />
-webrtc播流地址：webrtc://IP:7703/live/test001
-<br />
-<br />
-2.超低延播放器代码集成：网页代码接入，两行代码接入,参考play/demo-autoplay.html代码，网页嵌入ovplayer.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
-//ovsyunlive运行的服务地址 <br />
+        Win64测试包：<a href='http://m.ovmeet.com/ovsyunlive13-windows.zip'>http://m.ovmeet.com/ovsyunlive13-windows.zip</a><br />
+        Linux测试包：<a href='http://m.ovmeet.com/ovsyunlive13-linux.zip'>http://m.ovmeet.com/ovsyunlive13-linux.zip</a><br />
+        Windows系统，1.解压  2.配ovmeetmcu.ini上IP  3.运行 双击start.bat  4.停止：stop.bat <br />
+        Linux系统，  1.解压  2.配ovmeetmcu.ini上IP  3.授权 chmod -R 777 ./ovsyunlive/*  4.运行 ./start.sh  5.停止：./stop.sh <br />
+        服务程序配IP，要配ovmeetmcu.ini的public_ip =公网IP.(内网也可以配内网IP重启)<br />
+        github地址:<a href='https://github.com/ccallcn/ovsyunlive'>https://github.com/ccallcn/ovsyunlive</a><br />
+			<br />
+1，全面支持取win/linux/arm/android设备摄像头麦克风，支持取桌面+外放音频，<br />
+rtsp播放，桌面分享web打开，超低100毫秒延时<br />
+演示地址：<a href='./demo.html'>http://m.ovmeet.com/play/demo.html</a><br />
+<p><img src="./ovsyunlive13-desk.png" alt="dvr" width="640" height="360" style="text-align:center;"></p><br />
+2.超低延播放器代码集成：详见sdk文档和播放demo代码，网页嵌入ovplayer.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
     var player = new OvPlayer('#video', {server: 'http://' + location.hostname + ':7703', password: '', muted: true,});<br />
     // 播放：随便哪种地址 rtsp,rtmp,whep,webrtc,ovplayw,桌面和摄像头<br />
     player.play('rtsp://192.168.1.64:554/Streaming/Channels/101');<br />
@@ -44,10 +35,11 @@ webrtc播流地址：webrtc://IP:7703/live/test001
     // player.playCamera();　主机摄像头<br />
     // 停止 <br />
     // player.stop(); <br />
-<br />
-3、全平台低延时播放器,支持H265,易集成，在线测试：
-http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
-<br />
+			<br />
+3.whip/rtsp推流测试：<br />
+          whip推流地址: http://IP:7703/whip/?app=live&stream=2222<br />
+          rtsp推流地址: http://IP:7554/live/2222<br />
+    <br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-desk.png" /></p>
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-rtsp.png" /></p>
 <br />
