@@ -25,7 +25,7 @@ Linux系统，  1.解压  2.配ovmeetmcu.ini上IP  3.授权 chmod -R 777 ./ovsyu
 1，全面支持取win/linux/arm/android设备摄像头麦克风，支持取桌面+外放音频，<br />
 rtsp播放，桌面分享web打开，超低100毫秒延时<br />
 演示地址：<a href='./demo.html'>http://m.ovmeet.com/play/demo.html</a><br />
-<p><img src="./ovsyunlive13-desk.png" alt="dvr" width="640" height="360" style="text-align:center;"></p><br />
+<p align="center"><img src="./ovsyunlive13-desk.png" /></p> <br />
 2.超低延播放器代码集成：详见sdk文档和播放demo代码，网页嵌入ovplayer.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
     var player = new OvPlayer('#video', {server: 'http://' + location.hostname + ':7703', password: '', muted: true,});<br />
     // 播放：随便哪种地址 rtsp,rtmp,whep,webrtc,ovplayw,桌面和摄像头<br />
@@ -41,6 +41,7 @@ rtsp播放，桌面分享web打开，超低100毫秒延时<br />
           whip推流地址: http://IP:7703/whip/?app=live&stream=2222<br />
           rtsp推流地址: http://IP:7554/live/2222<br />
     <br />
+<p align="center"><img src="./20251021163335.png" /></p>  <br />
 4. Android-APP:<a href='https://w.ovmeet.com:9301/OvMeetMCU.apk'>https://w.ovmeet.com:9301/OvMeetMCU.apk</a><br />
          webrtc播流地址：webrtc://IP:7703/live/2222<br /> 
          rtsp播流地址：rtsp://IP:7554/live/2222<br />
