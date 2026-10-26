@@ -38,7 +38,7 @@ webrtc播流地址：webrtc://IP:7703/live/test001
     var player = new OvPlayer('#video', {server: 'http://' + location.hostname + ':7703', password: '', muted: true,});<br />
     // 播放：随便哪种地址 rtsp,rtmp,whep,webrtc,ovplayw,桌面和摄像头<br />
     player.play('rtsp://192.168.1.64:554/Streaming/Channels/101');<br />
-    player.play('whep://192.168.0.13:7703/live/cam1');<br />
+    // player.play('whep://192.168.0.13:7703/live/cam1');<br />
     // player.play('http://192.168.0.13:7703/whep/?app=live&stream=cam1');<br />
     // player.playDesktop(); 主机主屏<br />
     // player.playCamera();　主机摄像头<br />
