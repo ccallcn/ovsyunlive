@@ -62,7 +62,8 @@ http://m.ovmeet.com:7701/play/index.html
 <br />
 http://m.ovmeet.com:7701/play/play.html?rtsp://admin:xxx@192.168.1.105/live0.264
 <br />
-<br />
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-desk.png" /></p>
+<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-rtsp.png" /></p>
 <br />
 会议解决：1，多屏监控和兼容问题，2，不同编码web集成问题（h265,h264）。3, 多协议兼容，sip会议，gb监控，rtsp,rtmp集中统一 4，多功能融合调度问题。5，多屏录存问题<br /> 
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ截图20260920081055.png" /></p>
@@ -97,8 +98,7 @@ MCU-SIP(VOIP)演示：https://w.ovmeet.com:9301/login.html
 测试为演示版，不定时调整更新，商用需要授权，支持Windows,Linux系统，有需要可以联系 QQ:1410919373 QQ群:216403866
 <br />
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/QQ图片20231106153916.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-desk.png" /></p>
-<p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-rtsp.png" /></p>
+
 <br />
 会议一键登录api: https://IP:7777/join?room=test1111&password=0&name=vimeet001&audio=1&video=1&screen=0&notify=0
 <p align="center"><img src="https://github.com/ccallcn/ovsyunlive/raw/master/ovsyunlive13-pan.png" /></p>
