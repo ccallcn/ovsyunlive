@@ -19,11 +19,13 @@
 
 Win64测试包：<a href='https://m.ovmeet.com/ovsyunlive13-windows.zip'>https://m.ovmeet.com/ovsyunlive13-windows.zip</a><br />
 Linux测试包：<a href='https://m.ovmeet.com/ovsyunlive13-linux.zip'>https://m.ovmeet.com/ovsyunlive13-linux.zip</a><br />
+Android-mcu测试服务端下载：https://w.ovmeet.com:9301/OvMeetMCU.apk<br />
+     <br /> 
 Windows系统，1.解压  2.配ovmeetmcu.ini上IP  3.运行 双击start.bat  4.停止：stop.bat <br />
 Linux-debian12系统，  1.解压  2.配ovmeetmcu.ini上IP  3.授权 chmod -R 777 ./ovsyunlive/*  4.运行 ./start.sh  5.停止：./stop.sh <br />
 服务程序配IP，要配ovmeetmcu.ini的public_ip =公网IP.(内网也可以配内网IP重启)<br />
 演示地址:https://m.ovmeet.com:7702/play/<br />
-	
+使用教程:https://www.cnblogs.com/ovmeet/p/23453404<br />	
 1，全面支持取win/linux/arm/android设备摄像头麦克风，支持取桌面+外放音频，<br />
 rtsp播放，桌面分享web打开，超低100毫秒延时<br />
 演示地址：http://m.ovmeet.com:7702/play/demo.html</a><br />
@@ -67,8 +69,7 @@ rtsp播放，桌面分享web打开，超低100毫秒延时<br />
 12，本地离线模型及时ASR/TTS语音转录，400毫秒内及时转录，方便对接AI模型<br />
 13，简单易用，可提供测试包，或定制arm/linux/windows<br />
      <br /> 
-Android-mcu测试服务端下载：https://w.ovmeet.com:9301/OvMeetMCU.apk<br />
-     <br /> 
+
 基于全新的架构SIP视频对讲广播会议系统<br />
 OvMeet-PBX融合通信平台，一体化集成，化繁为简​，高清视频对讲，面对面的沟通​，强大广播功能，信息一键传达​<br />
 OvMeet-MCU演示：https://m.ovmeet.com:9903 商业需求QQ:1410919373 ​<br />
