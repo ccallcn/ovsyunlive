@@ -28,7 +28,7 @@ Linux-debian12系统，  1.解压  2.配ovmeetmcu.ini上IP  3.授权 chmod -R 77
 使用教程:https://www.cnblogs.com/ovmeet/p/23453404<br />	
 1，全面支持取win/linux/arm/android设备摄像头麦克风，支持取桌面+外放音频，<br />
 rtsp播放，桌面分享web打开，超低100毫秒延时<br />
-演示地址：http://m.ovmeet.com:7702/play/demo.html</a><br />
+演示地址：https://m.ovmeet.com:7702/play/demo.html</a><br />
 <p align="center"><img src="./ovsyunlive13-desk.png" /></p> <br />
 2.超低延播放器代码集成：详见sdk文档和播放demo代码，网页嵌入ovplayer.js，指定ovsyunlive服务器地址，播放rtsp/rtmp流。<br />
     var player = new OvPlayer('#video', {server: 'http://' + location.hostname + ':7703', password: '', muted: true,});<br />
