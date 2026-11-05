@@ -42,14 +42,15 @@ rtsp播放，桌面分享web打开，超低100毫秒延时<br />
     // player.stop(); <br />
 			<br />
 3.whip/rtsp推流测试：<br />
-          whip推流地址: http://IP:7703/whip/?app=live&stream=2222<br />
-          rtsp推流地址: http://IP:7554/live/2222<br />
+    whip推流地址: http://IP:7703/whip/?app=live&stream=2222<br />
+    rtsp推流地址: http://IP:7554/live/2222<br />
+    webrtc播流地址：webrtc://IP:7703/live/2222<br /> 
+    rtsp播流地址：rtsp://IP:7554/live/2222<br />
+    whep播放地址: http://IP:7703/whep/?app=live&stream=2222<br />
     <br />
 <p align="center"><img src="./20251021163335.png" /></p>  <br />
 4. Android-APP:<a href='https://w.ovmeet.com:9301/OvMeetMCU.apk'>https://w.ovmeet.com:9301/OvMeetMCU.apk</a><br />
-         webrtc播流地址：webrtc://IP:7703/live/2222<br /> 
-         rtsp播流地址：rtsp://IP:7554/live/2222<br />
-         whep播放地址: http://IP:7703/whep/?app=live&stream=2222<br />
+
          <br /> 
 5. 公网测试,一定要确认rtsp/rtmp地址公网可用，测试页请不要长时间挂机播放 如有需求QQ:<a href='tencent://message/?uin=1410919373&amp;Site=qq&amp;Menu=yes'>1410919373</a><br />
      <br /> 
